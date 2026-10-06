@@ -1,0 +1,3 @@
+# Model Round logic against a generic Participant tag, not real players only
+
+Round logic (Elimination, Win Conditions, invincibility, nametag hiding, etc.) is written against a generic "in-round" entity tag rather than vanilla's player-only selectors. This means a solo tester can summon no-AI Test Dummy villagers into a Round and have them exercise the exact same logic path as a real player, instead of relying on a separate mocked debug harness. The trade-off is a small amount of extra care writing selectors generically; the payoff is that solo testing proves the real game logic rather than a parallel fake.
