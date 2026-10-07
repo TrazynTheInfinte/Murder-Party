@@ -12,6 +12,10 @@ execute unless entity @e[tag=mp_lobby_point] run return fail
 execute unless entity @e[tag=mp_spawn_point] run tellraw @a [{"text":"[Murder Party] No spawn points set. An admin must run /function murder_party:admin/add_spawn_point.","color":"red"}]
 execute unless entity @e[tag=mp_spawn_point] run return fail
 
+# defensive: a stray mp_killer tag (e.g. from debug/set_role misuse before
+# this round began) must not survive into the new round's role assignment
+tag @e remove mp_killer
+
 tag @e[tag=mp_joined] add mp_alive
 tag @e[tag=mp_joined] add mp_participant
 tag @e[tag=mp_joined] remove mp_joined
