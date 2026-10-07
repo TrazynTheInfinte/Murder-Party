@@ -51,13 +51,21 @@ A communication channel exclusive to Spectating participants, offered as an alte
 **Meeting**:
 A temporary pause in free play where every living Participant gathers at the Meeting Point to discuss and Vote.
 
-**Meeting Horn**:
-The item a living Participant uses to call a Meeting. Each Participant may use theirs once per Round.
-_Avoid_: Emergency button, horn item
+**Panic Button**:
+The single placed block a living Participant presses to call a Meeting, located at the Meeting Point. Pressing it spends that Participant's Meeting Call.
+_Avoid_: Meeting Horn (the originally-planned item this supersedes), emergency button, horn item
+
+**Meeting Call**:
+A living Participant's one-time allowance, per Round, to trigger a Meeting by pressing the Panic Button.
+_Avoid_: Horn use, button press (names the mechanism, not the allowance it spends)
 
 **Meeting Point**:
-The single location all living Participants are gathered to for a Meeting. Set once per map and reused by every Round until changed.
+The single location all living Participants are gathered to for a Meeting, and where the Panic Button is located. Set once per map and reused by every Round until changed.
 _Avoid_: Meeting location, meeting room
+
+**Round Timer**:
+The countdown that ends the Round as an Innocents Win Condition if it reaches zero before the Killer is Ejected. Pauses for the duration of a Meeting.
+_Avoid_: Timer, clock
 
 **Vote**:
 A living Participant's choice, cast during a Meeting, of who they believe should be Ejected.
