@@ -28,7 +28,15 @@ The removal of a Participant from active play, by Strike or by Ejection, moving 
 _Avoid_: Death, Kill
 
 **Strike**:
-The Killer's one-hit Elimination of another Participant.
+The Killer's one-hit Elimination of another Participant, dealt with the Weapon.
+
+**Weapon**:
+The single knife instance given to the Killer at Round start. Only this specific instance can Strike; any other copy of the same item, found or crafted elsewhere, is an ordinary tool.
+_Avoid_: Knife (names the item type, not the specific instance that matters)
+
+**Weapon Cooldown**:
+The period, starting at Round start and restarting after every Strike, during which the Weapon cannot Strike again.
+_Avoid_: Item cooldown (this is tracked independently of Minecraft's built-in per-item use cooldown)
 
 **Ejection**:
 Elimination of a Participant decided by majority Vote at a Meeting. A tied Vote results in no Ejection.

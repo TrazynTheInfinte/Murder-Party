@@ -1,0 +1,5 @@
+# A Strike is detected and forced, not dealt through damage math
+
+The Weapon doesn't rely on an attribute-based damage bonus overwhelming everyone else's invincibility effect. Instead, an advancement trigger scoped to the Weapon's specific item instance detects that the Killer hit something, and our own function forces the target directly into Elimination if it's a live Participant — regardless of the actual damage number the hit produced. This avoids depending on exactly how the mod's own damage calculation interacts with the invincibility effect, and keeps the Strike's effect scoped to Participants: hitting a mob or a non-Participant with the Weapon is just an ordinary hit, not a kill.
+
+A side effect: advancement reward functions run as the attacker, not the victim, so there's no direct reference to who got hit. The reward function instead targets the nearest other `mp_alive` entity within melee range of the Killer at that instant — reliable here because the game is always one attacker on one target in melee range at a time, but worth knowing if this is ever reused somewhere that assumption doesn't hold.

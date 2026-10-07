@@ -1,0 +1,3 @@
+# The Weapon's lethality is scoped to one item instance, not the item type
+
+Any knife from the knife mod could in principle be used to detect a Strike, but we tag the Killer's knife with unique NBT at Round start and scope the advancement predicate to that exact instance. A naive reading of "give the Killer an iron knife" would make every iron knife on the server lethal, including ones players already own or craft themselves — turning an unrelated inventory item into an accidental insta-kill weapon. Scoping to the specific instance means the mod's knives otherwise behave exactly as the mod intends outside of the one instance handed out at Round start.
