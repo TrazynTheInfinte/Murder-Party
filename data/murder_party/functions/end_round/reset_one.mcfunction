@@ -2,6 +2,11 @@ clear @s simpleknives:iron_knife{MurderPartyWeapon:1b}
 scoreboard players set @s mp_cooldown 0
 tag @s remove mp_weapon_drawn
 
+tag @s remove mp_meeting_used
+tag @s remove mp_has_voted
+scoreboard players set @s mp_vote 0
+scoreboard players set @s mp_vote_slot 0
+
 tag @s remove mp_alive
 tag @s remove mp_killer
 tag @s remove mp_spectating

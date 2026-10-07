@@ -6,6 +6,11 @@ scoreboard objectives add mp_count dummy
 scoreboard objectives add mp_cooldown dummy
 scoreboard objectives add mp_subtick dummy
 scoreboard objectives add mp_countdown dummy
+scoreboard objectives add mp_meeting_timer dummy
+scoreboard objectives add mp_vote_slot dummy
+scoreboard objectives add mp_vote dummy
+scoreboard objectives add mp_tally dummy
+scoreboard objectives add mp_slot_counter dummy
 
 team add mp_hidden
 team modify mp_hidden nametagVisibility never

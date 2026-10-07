@@ -1,0 +1,10 @@
+execute if score #tally mp_max_slot matches 1 run function murder_party:meeting/eject_slot_1
+execute if score #tally mp_max_slot matches 2 run function murder_party:meeting/eject_slot_2
+execute if score #tally mp_max_slot matches 3 run function murder_party:meeting/eject_slot_3
+execute if score #tally mp_max_slot matches 4 run function murder_party:meeting/eject_slot_4
+execute if score #tally mp_max_slot matches 5 run function murder_party:meeting/eject_slot_5
+execute if score #tally mp_max_slot matches 6 run function murder_party:meeting/eject_slot_6
+execute if score #tally mp_max_slot matches 7 run function murder_party:meeting/eject_slot_7
+execute if score #tally mp_max_slot matches 8 run function murder_party:meeting/eject_slot_8
+execute if score #tally mp_max_slot matches 9 run function murder_party:meeting/eject_slot_9
+execute if score #tally mp_max_slot matches 10 run function murder_party:meeting/eject_slot_10
