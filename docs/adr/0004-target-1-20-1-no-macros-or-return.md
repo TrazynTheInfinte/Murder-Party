@@ -1,0 +1,3 @@
+# Target Minecraft 1.20.1; no function macros or /return
+
+The project moved its target version from 1.26.3 down to 1.20.1 Forge, to interoperate with other mods the intended server will run. Function macros (`$(var)`) and the `/return` command were both added in 1.20.2, one version later, so neither is available. Guard clauses that would otherwise use `return fail` to exit a function early instead repeat the same `execute if/unless` condition on each subsequent line; the two dispatcher functions that picked a sub-function by macro substitution (`end_round`, `debug/set_role`) were replaced with separate concrete functions called directly by name. This makes some functions more repetitive than they would be on a newer target, but keeps every file loadable on 1.20.1.

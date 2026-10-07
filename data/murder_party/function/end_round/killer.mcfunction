@@ -1,1 +1,0 @@
-tellraw @a [{"text":"[Murder Party] The Killer wins! ","color":"dark_red","bold":true},{"text":"The Killer was ","color":"gray"},{"selector":"@e[tag=mp_killer]","color":"dark_red"},{"text":".","color":"gray"}]

@@ -6,5 +6,5 @@ execute as @e[tag=mp_alive,tag=!mp_killer] run scoreboard players add #innocents
 
 # a disconnected player simply stops matching @e, so this count already
 # treats a disconnect mid-round as an elimination with no extra code
-execute if score #killers mp_count matches 0 run function murder_party:end_round {result:"innocents"}
-execute if score #mp mp_state matches 1 if score #innocents mp_count matches 0 run function murder_party:end_round {result:"killer"}
+execute if score #killers mp_count matches 0 run function murder_party:end_round/innocents
+execute if score #mp mp_state matches 1 if score #innocents mp_count matches 0 run function murder_party:end_round/killer
