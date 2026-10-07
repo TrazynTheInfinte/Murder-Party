@@ -87,3 +87,15 @@ _Avoid_: Force-stop (that names the action; Cancellation is the resulting outcom
 **Test Dummy**:
 A non-player stand-in Participant used to populate a Round for solo testing. Counts as an Innocent for Elimination and Win Condition purposes.
 _Avoid_: Fake player, bot
+
+## Security Room
+
+A persistent map feature, not scoped to a Round — usable by any Participant, any Role, anytime.
+
+**Security Room**:
+The admin-designated chest or barrel, and the radius around it, that the Monitor must stay within.
+_Avoid_: Camera room (names the theme, not the enforced boundary)
+
+**Monitor**:
+The single tracked instance of the camera-viewing item that lives in the Security Room. Any Participant may use it, but carrying it past the Security Room's radius returns it there instantly, camera bindings intact.
+_Avoid_: Camera Monitor (names the underlying item type; Monitor is the one specific tracked instance, same relationship as Weapon to knife)

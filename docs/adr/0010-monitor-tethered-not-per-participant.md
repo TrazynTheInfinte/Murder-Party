@@ -1,0 +1,5 @@
+# The Monitor is tethered to the Security Room, not given per-Participant
+
+The Weapon established a working pattern for a risky item: give everyone eligible their own NBT-tagged instance, and clean it up on elimination or Round end. The Monitor deliberately does not follow that pattern. Instead there is exactly one Monitor, and its home is a chest in the Security Room — carrying it past an admin-set radius strips it from whoever's holding it and places a fresh, identically-tagged copy back in the chest.
+
+This was a real trade-off, not an obvious choice given the precedent already in the codebase. The per-Participant approach would have meant re-binding cameras onto a fresh copy for every Round (or finding a way to clone bindings onto many copies), and would have let everyone view cameras simultaneously from anywhere — fine for the Weapon, wrong for a "security room" that's meant to be a place, not a perk everyone carries. Tethering also sidesteps needing any Round-boundary cleanup logic at all, since the Monitor was never truly scoped to a Round in the first place.
