@@ -5,6 +5,7 @@ scoreboard objectives add mp_timer dummy
 scoreboard objectives add mp_count dummy
 scoreboard objectives add mp_cooldown dummy
 scoreboard objectives add mp_subtick dummy
+scoreboard objectives add mp_countdown dummy
 
 team add mp_hidden
 team modify mp_hidden nametagVisibility never

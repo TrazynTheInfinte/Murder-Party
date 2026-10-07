@@ -1,3 +1,5 @@
+title @a clear
+
 # defensive: a stray mp_killer tag (e.g. from debug/set_role misuse before
 # this round began) must not survive into the new round's role assignment
 tag @e remove mp_killer
