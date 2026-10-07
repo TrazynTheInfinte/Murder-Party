@@ -19,7 +19,7 @@ tag @e[tag=mp_joined] remove mp_joined
 execute as @e[tag=mp_alive] run function murder_party:place_participant
 
 execute as @e[tag=mp_alive,sort=random,limit=1] run function murder_party:make_killer
-tellraw @e[tag=mp_alive,tag=!mp_killer] [{"text":"[Murder Party] You are an Innocent. Find the Killer!","color":"green"}]
+tellraw @a[tag=mp_alive,tag=!mp_killer] [{"text":"[Murder Party] You are an Innocent. Find the Killer!","color":"green"}]
 
 # 12000 ticks = 10 minutes at 20 ticks/sec
 scoreboard players set #mp mp_timer 12000
