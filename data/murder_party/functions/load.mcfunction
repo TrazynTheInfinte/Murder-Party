@@ -11,6 +11,12 @@ scoreboard objectives add mp_vote_slot dummy
 scoreboard objectives add mp_vote dummy
 scoreboard objectives add mp_tally dummy
 scoreboard objectives add mp_slot_counter dummy
+scoreboard objectives add mp_pos_x dummy
+scoreboard objectives add mp_pos_y dummy
+scoreboard objectives add mp_pos_z dummy
+scoreboard objectives add mp_dist_sq dummy
+scoreboard objectives add mp_security_radius dummy
+scoreboard objectives add mp_radius_sq dummy
 
 team add mp_hidden
 team modify mp_hidden nametagVisibility never
@@ -19,5 +25,9 @@ team modify mp_hidden color gray
 scoreboard players set #mp mp_state 0
 scoreboard players set #mp mp_timer 0
 scoreboard players set #mp mp_subtick 0
+
+# only sets a default the first time ever - a custom radius the admin set
+# survives every later /reload instead of being clobbered back to 15
+execute unless score #mp mp_security_radius matches -2147483648..2147483647 run scoreboard players set #mp mp_security_radius 15
 
 tellraw @a [{"text":"[Murder Party] datapack loaded","color":"gray"}]
