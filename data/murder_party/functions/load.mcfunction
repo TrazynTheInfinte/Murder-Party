@@ -1,3 +1,5 @@
+gamerule sendCommandFeedback false
+
 scoreboard objectives add mp_state dummy
 scoreboard objectives add mp_timer dummy
 scoreboard objectives add mp_count dummy
