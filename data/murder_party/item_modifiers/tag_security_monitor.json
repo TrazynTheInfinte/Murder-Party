@@ -1,0 +1,4 @@
+{
+  "function": "minecraft:set_nbt",
+  "tag": "{MurderPartySecurityMonitor:1b}"
+}
