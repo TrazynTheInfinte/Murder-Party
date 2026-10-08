@@ -2,9 +2,11 @@ execute if entity @s[tag=mp_killer] run tellraw @a [{"text":"[Murder Party] ","c
 execute unless entity @s[tag=mp_killer] run tellraw @a [{"text":"[Murder Party] ","color":"gold"},{"selector":"@s"},{"text":" was ejected. They were an Innocent.","color":"green"}]
 
 execute if entity @s[tag=mp_killer] run clear @s simpleknives:iron_knife{MurderPartyWeapon:1b}
+execute if entity @s[tag=mp_masked_killer] run clear @s id_mask:id_mask
 
 tag @s remove mp_alive
 tag @s remove mp_killer
+tag @s remove mp_masked_killer
 tag @s add mp_spectating
 gamemode spectator @s
 execute if entity @s[tag=mp_test_dummy] run kill @s

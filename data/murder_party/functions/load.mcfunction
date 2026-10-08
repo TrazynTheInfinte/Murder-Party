@@ -17,6 +17,7 @@ scoreboard objectives add mp_pos_z dummy
 scoreboard objectives add mp_dist_sq dummy
 scoreboard objectives add mp_security_radius dummy
 scoreboard objectives add mp_radius_sq dummy
+scoreboard objectives add mp_masked_killer_enabled dummy
 
 team add mp_hidden
 team modify mp_hidden nametagVisibility never
@@ -29,5 +30,8 @@ scoreboard players set #mp mp_subtick 0
 # only sets a default the first time ever - a custom radius the admin set
 # survives every later /reload instead of being clobbered back to 15
 execute unless score #mp mp_security_radius matches -2147483648..2147483647 run scoreboard players set #mp mp_security_radius 15
+
+# off by default - admin opts in with "scoreboard players set #mp mp_masked_killer_enabled 1"
+execute unless score #mp mp_masked_killer_enabled matches -2147483648..2147483647 run scoreboard players set #mp mp_masked_killer_enabled 0
 
 tellraw @a [{"text":"[Murder Party] datapack loaded","color":"gray"}]

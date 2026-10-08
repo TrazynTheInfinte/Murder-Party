@@ -1,0 +1,1 @@
+execute as @e[tag=mp_masked_killer] run item replace entity @s armor.head with id_mask:id_mask{MaskType:"player",display:{Name:'{"text":"mister__woo"}'},Enchantments:[{id:"minecraft:binding_curse",lvl:1}]}
