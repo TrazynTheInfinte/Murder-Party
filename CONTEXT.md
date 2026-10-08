@@ -108,6 +108,22 @@ _Avoid_: Force-stop (that names the action; Cancellation is the resulting outcom
 A non-player stand-in Participant used to populate a Round for solo testing. Counts as an Innocent for Elimination and Win Condition purposes.
 _Avoid_: Fake player, bot
 
+**Civilian Role**:
+An optional extra layer some Innocents get on top of the base Innocent definition — currently Vigilante, Noisemaker, or Captain. An Innocent with none of these is still simply an Innocent; nothing about the base definition changes.
+_Avoid_: Innocent Variant (deliberately a different term from Killer Variant — the assignment mechanics are meaningfully different: a random pair plus decline, not a full list, and every Killer ends up with exactly one Variant while most Innocents end up with none)
+
+**Civilian Role Choice**:
+An Innocent's private pick (or decline) from a random pair of Civilian Roles offered during the Round's start countdown, capped at one Participant per Role per Round.
+
+**Vigilante**:
+A Civilian Role. Holds a single-use knife that Eliminates the Killer if struck with it — any other target just breaks it for nothing, with no further consequence to the Vigilante beyond the wasted shot.
+
+**Noisemaker**:
+A Civilian Role. Being Struck broadcasts a global alarm naming them, instead of the usual proximity-only cue — reveals who died, not where.
+
+**Captain**:
+A Civilian Role. Marked with a permanently visible nametag for the Round — the one deliberate exception to the game's otherwise-universal hidden-nametag rule. Can call a Meeting from anywhere, not just the Meeting Point.
+
 ## Security Room
 
 A persistent map feature, not scoped to a Round — usable by any Participant, any Role, anytime.
