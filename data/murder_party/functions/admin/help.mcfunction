@@ -5,6 +5,6 @@ tellraw @s [{"text":"admin/clear_spawn_points","color":"yellow"},{"text":" - rem
 tellraw @s [{"text":"admin/set_meeting_point","color":"yellow"},{"text":" - stand near an already-placed Panic Button, run this to link it as the Meeting Point","color":"gray"}]
 tellraw @s [{"text":"admin/set_security_room","color":"yellow"},{"text":" - stand near a chest/barrel with the bound Camera Monitor in its first slot, run this to link it as the Security Room","color":"gray"}]
 tellraw @s [{"text":"/scoreboard players set #mp mp_security_radius <N>","color":"yellow"},{"text":" - sets how far the Monitor can travel from the Security Room before it's returned (default 15)","color":"gray"}]
-tellraw @s [{"text":"/scoreboard players set #mp mp_masked_killer_enabled 1","color":"yellow"},{"text":" - makes the next Killer a Masked Killer instead of plain (default off; set to 0 to turn off again)","color":"gray"}]
+tellraw @s [{"text":"admin/set_saboteur_kit","color":"yellow"},{"text":" - stand near a chest/barrel of bound Create remotes, run this to link it as the Saboteur's starting kit","color":"gray"}]
 tellraw @s [{"text":"admin/force_start","color":"yellow"},{"text":" - starts a Round immediately, bypassing the 3-player join threshold","color":"gray"}]
 tellraw @s [{"text":"admin/force_stop","color":"yellow"},{"text":" - cancels the current Round, countdown, or Meeting","color":"gray"}]

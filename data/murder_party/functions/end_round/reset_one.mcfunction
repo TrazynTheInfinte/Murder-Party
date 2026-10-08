@@ -5,6 +5,10 @@ tag @s remove mp_weapon_drawn
 clear @s id_mask:id_mask
 tag @s remove mp_masked_killer
 
+clear @s create:linked_controller
+tag @s remove mp_saboteur
+tag @s remove mp_killer_variant_chosen
+
 tag @s remove mp_meeting_used
 tag @s remove mp_has_voted
 scoreboard players set @s mp_vote 0
