@@ -1,0 +1,5 @@
+# A Struck victim's inventory is wiped, not snapshotted, before their Corpse spawns
+
+Spawning a Corpse means running the Player Corpse Detailed mod's test-corpse command as the victim, and that command pulls whatever is in their actual current inventory into the lootable corpse. The victim never really dies (they go to Spectating, not a real death), so an un-cleared corpse would let anyone loot a duplicate of everything they were carrying. The victim's inventory is cleared immediately beforehand to close that off entirely, rather than snapshotting it to restore later.
+
+A permanent wipe was a deliberate choice, not an oversight: this server is otherwise persistent, so destroying real player belongings as a side effect would be a bad trade — but inventory contents at Strike time only ever came from this minigame (Participants don't carry real belongings into a Round), so there's nothing of lasting value to lose. If Participants ever start a Round carrying real items, this needs revisiting.

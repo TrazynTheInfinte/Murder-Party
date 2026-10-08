@@ -28,7 +28,19 @@ The removal of a Participant from active play, by Strike or by Ejection, moving 
 _Avoid_: Death, Kill
 
 **Strike**:
-The Killer's one-hit Elimination of another Participant, dealt with the Weapon.
+The Killer's one-hit Elimination of another Participant, dealt with the Weapon. Leaves a Corpse.
+
+**Corpse**:
+The visual remnant a Strike leaves at the victim's location. Purely cosmetic — no interaction, no bearing on any Win Condition. Removed after a lifespan set by which Killer variant struck them, or instantly if a Meeting is called.
+_Avoid_: Body, dead body
+
+**Masked Killer**:
+A Killer variant chosen instead of a plain Killer at Round start — a Round has exactly one Killer either way, never both. Every Strike shortens their victims' Corpse lifespan and grants them a Mask disguised as that victim.
+_Avoid_: Impersonator, disguised killer
+
+**Mask**:
+The single tracked disguise instance a Masked Killer holds, always showing their most recently Struck victim. A new Strike replaces it; it never accumulates more than one at a time.
+_Avoid_: ID Mask, disguise (names the item type, not the specific instance that matters)
 
 **Weapon**:
 The single knife instance given to the Killer at Round start. Only this specific instance can Strike; any other copy of the same item, found or crafted elsewhere, is an ordinary tool.
