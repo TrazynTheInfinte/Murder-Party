@@ -16,8 +16,8 @@ _Avoid_: Player (too narrow — excludes Test Dummies)
 The hidden assignment of a Participant as Killer or Innocent, decided at Round start and held for the Round's duration.
 
 **Killer**:
-The Participant whose goal is to eliminate every Innocent before the Round Timer expires or they are Ejected.
-_Avoid_: Murderer, Impostor
+The abstract template every Killer Variant extends — shares the goal (eliminate every Innocent before the Round Timer expires or they are Ejected) and core mechanics (the Weapon, Weapon Cooldown, invincibility rules) across all of them. Never itself selectable or playable standalone: every Round's Killer ends up as exactly one concrete Killer Variant.
+_Avoid_: Murderer, Impostor, plain Killer (there is no such thing — every Killer is some specific Variant)
 
 **Innocent**:
 A Participant who is not the Killer, trying to survive until the Killer is eliminated or the Round Timer expires.
@@ -34,9 +34,17 @@ The Killer's one-hit Elimination of another Participant, dealt with the Weapon. 
 The visual remnant a Strike leaves at the victim's location. Purely cosmetic — no interaction, no bearing on any Win Condition. Removed after a lifespan set by which Killer variant struck them, or instantly if a Meeting is called.
 _Avoid_: Body, dead body
 
+**Killer Variant**:
+Which concrete form the Round's Killer takes — currently Masked Killer or Saboteur, with more addable later. Chosen privately by the Killer during the Round's start countdown; defaults to Saboteur if not chosen in time.
+_Avoid_: Role (Role is the Killer/Innocent assignment; Killer Variant is which concrete Killer the Round's Killer is this time)
+
 **Masked Killer**:
-A Killer variant chosen instead of a plain Killer at Round start — a Round has exactly one Killer either way, never both. Every Strike shortens their victims' Corpse lifespan and grants them a Mask disguised as that victim.
+A Killer Variant. Every Strike shortens their victims' Corpse lifespan and grants them a Mask disguised as that victim.
 _Avoid_: Impersonator, disguised killer
+
+**Saboteur**:
+A Killer Variant. Starts the Round with a personal kit of Create mod remotes, bound and sized however the admin staged them beforehand — a personal toolkit, not a shared resource like the Monitor.
+_Avoid_: default Killer, remote killer
 
 **Mask**:
 The single tracked disguise instance a Masked Killer holds, always showing their most recently Struck victim. A new Strike replaces it; it never accumulates more than one at a time.

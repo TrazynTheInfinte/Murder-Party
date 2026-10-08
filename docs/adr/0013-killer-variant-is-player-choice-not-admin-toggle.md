@@ -1,0 +1,5 @@
+# Killer Variant is chosen by the player each Round, not set by the admin
+
+The Masked Killer shipped with an admin-set scoreboard toggle deciding whether the Round's Killer would be plain or Masked. That's reversed here: with a second Killer Variant (Saboteur) joining, and more planned, the Killer now privately picks their own Variant each Round from a clickable menu during the start countdown, defaulting to Saboteur if they don't choose in time. The admin toggle is removed entirely rather than kept alongside the player choice, since two mechanisms deciding the same thing would just be a source of confusion about which one actually wins.
+
+This was a deliberate, explicit reversal of work from the previous session, not an oversight — it only made sense once a second Variant existed and the intent to keep adding more (eventually player-selectable, which is now) became concrete. A future reader finding no admin-side Killer Variant setting, after seeing one existed recently in git history, would otherwise reasonably wonder whether its removal was a mistake.
