@@ -1,0 +1,16 @@
+{
+  "criteria": {
+    "used": {
+      "trigger": "minecraft:using_item",
+      "conditions": {
+        "item": {
+          "items": ["minecraft:goat_horn"],
+          "nbt": "{MurderPartyCaptainHorn:1b}"
+        }
+      }
+    }
+  },
+  "rewards": {
+    "function": "murder_party:captain/horn_used"
+  }
+}

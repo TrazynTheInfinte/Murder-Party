@@ -5,11 +5,19 @@ execute if entity @s[tag=mp_killer] run clear @s simpleknives:iron_knife{MurderP
 execute if entity @s[tag=mp_masked_killer] run clear @s id_mask:id_mask
 execute if entity @s[tag=mp_saboteur] run clear @s create:linked_controller
 
+clear @s simpleknives:iron_knife{MurderPartyVigilanteWeapon:1b}
+clear @s minecraft:goat_horn{MurderPartyCaptainHorn:1b}
+execute if entity @s[tag=mp_captain] run team leave @s
+
 tag @s remove mp_alive
 tag @s remove mp_killer
 tag @s remove mp_masked_killer
 tag @s remove mp_saboteur
 tag @s remove mp_killer_variant_chosen
+tag @s remove mp_vigilante
+tag @s remove mp_noisemaker
+tag @s remove mp_captain
+tag @s remove mp_civilian_role_chosen
 tag @s add mp_spectating
 gamemode spectator @s
 execute if entity @s[tag=mp_test_dummy] run kill @s

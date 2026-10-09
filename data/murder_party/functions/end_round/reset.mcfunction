@@ -1,4 +1,5 @@
 kill @e[tag=mp_test_dummy]
+kill @e[tag=mp_cr_opt]
 
 execute as @e[tag=mp_participant] at @s run function murder_party:end_round/reset_one
 

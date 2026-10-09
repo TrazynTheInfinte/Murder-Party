@@ -9,6 +9,16 @@ clear @s create:linked_controller
 tag @s remove mp_saboteur
 tag @s remove mp_killer_variant_chosen
 
+clear @s simpleknives:iron_knife{MurderPartyVigilanteWeapon:1b}
+tag @s remove mp_vigilante
+
+tag @s remove mp_noisemaker
+
+clear @s minecraft:goat_horn{MurderPartyCaptainHorn:1b}
+tag @s remove mp_captain
+
+tag @s remove mp_civilian_role_chosen
+
 tag @s remove mp_meeting_used
 tag @s remove mp_has_voted
 scoreboard players set @s mp_vote 0

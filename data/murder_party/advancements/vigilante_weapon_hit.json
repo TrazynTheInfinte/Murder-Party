@@ -1,0 +1,10 @@
+{
+  "criteria": {
+    "hit": {
+      "trigger": "minecraft:player_hurt_entity"
+    }
+  },
+  "rewards": {
+    "function": "murder_party:weapon/vigilante_on_hit"
+  }
+}

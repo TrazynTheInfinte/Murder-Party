@@ -18,6 +18,13 @@ execute if entity @e[tag=mp_masked_killer] if entity @s[name=cyanoc_stellerii] r
 execute if entity @e[tag=mp_masked_killer] if entity @s[name=Nova_Zenith] run function murder_party:mask/grant_nova_zenith
 execute if entity @e[tag=mp_masked_killer] if entity @s[name=mister__woo] run function murder_party:mask/grant_mister__woo
 
+# Noisemaker only: a global alarm instead of silence about who died
+execute if entity @s[tag=mp_noisemaker] run playsound minecraft:entity.wither.spawn master @a ~ ~ ~ 1 1
+execute if entity @s[tag=mp_noisemaker] run tellraw @a [{"text":"[Murder Party] ","color":"red"},{"selector":"@s"},{"text":" has died.","color":"red"}]
+
+clear @s simpleknives:iron_knife{MurderPartyVigilanteWeapon:1b}
+clear @s minecraft:goat_horn{MurderPartyCaptainHorn:1b}
+
 tag @s remove mp_alive
 tag @s add mp_spectating
 gamemode spectator @s

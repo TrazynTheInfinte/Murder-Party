@@ -22,6 +22,11 @@ team add mp_hidden
 team modify mp_hidden nametagVisibility never
 team modify mp_hidden color gray
 
+# the Captain's one deliberate exception to the hidden-nametag rule
+team add mp_captain_visible
+team modify mp_captain_visible nametagVisibility always
+team modify mp_captain_visible prefix {"text":"[captain] ","color":"gold"}
+
 scoreboard players set #mp mp_state 0
 scoreboard players set #mp mp_timer 0
 scoreboard players set #mp mp_subtick 0
