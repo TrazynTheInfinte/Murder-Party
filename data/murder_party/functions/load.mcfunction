@@ -23,6 +23,7 @@ scoreboard objectives add mp_neutral_eligible dummy
 scoreboard objectives add mp_neutral_roll dummy
 scoreboard objectives add mp_participant_count dummy
 scoreboard objectives add mp_arsonist_cooldown dummy
+scoreboard objectives add mp_active_map dummy
 
 team add mp_hidden
 team modify mp_hidden nametagVisibility never
@@ -41,6 +42,10 @@ scoreboard players set #mp mp_ready_phase 0
 # only sets a default the first time ever - a custom radius the admin set
 # survives every later /reload instead of being clobbered back to 15
 execute unless score #mp mp_security_radius matches -2147483648..2147483647 run scoreboard players set #mp mp_security_radius 15
+
+# same default, but for Map 1's own stored radius (reuses the mp_security_radius
+# objective under a per-Map holder - see map/apply_map1.mcfunction and ADR 0021)
+execute unless score #map1 mp_security_radius matches -2147483648..2147483647 run scoreboard players set #map1 mp_security_radius 15
 
 # only sets a default the first time ever - the admin's debug override for
 # testing Neutrals at 3 players survives every later /reload
