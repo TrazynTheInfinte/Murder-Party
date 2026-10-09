@@ -13,8 +13,8 @@ execute unless entity @s[tag=mp_test_dummy] unless entity @e[tag=mp_masked_kille
 execute if entity @e[tag=mp_masked_killer] if entity @s[name=MKRFireDragon] run function murder_party:mask/grant_mkrfiredragon
 execute if entity @e[tag=mp_masked_killer] if entity @s[name=THRIceDragon] run function murder_party:mask/grant_thricedragon
 execute if entity @e[tag=mp_masked_killer] if entity @s[name=spawnvillager] run function murder_party:mask/grant_spawnvillager
-execute if entity @e[tag=mp_masked_killer] if entity @s[name=ninjamwuppy] run function murder_party:mask/grant_ninjamwuppy
-execute if entity @e[tag=mp_masked_killer] if entity @s[name=cyanoc_stellerii] run function murder_party:mask/grant_cyanoc_stellerii
+execute if entity @e[tag=mp_masked_killer] if entity @s[name=NinjaMwuppy] run function murder_party:mask/grant_ninjamwuppy
+execute if entity @e[tag=mp_masked_killer] if entity @s[name=Cyanoc_Stellerii] run function murder_party:mask/grant_cyanoc_stellerii
 execute if entity @e[tag=mp_masked_killer] if entity @s[name=Nova_Zenith] run function murder_party:mask/grant_nova_zenith
 execute if entity @e[tag=mp_masked_killer] if entity @s[name=Mister__Woo] run function murder_party:mask/grant_mister__woo
 
