@@ -22,6 +22,7 @@ scoreboard objectives add mp_neutral_force dummy
 scoreboard objectives add mp_neutral_eligible dummy
 scoreboard objectives add mp_neutral_roll dummy
 scoreboard objectives add mp_participant_count dummy
+scoreboard objectives add mp_arsonist_cooldown dummy
 
 team add mp_hidden
 team modify mp_hidden nametagVisibility never

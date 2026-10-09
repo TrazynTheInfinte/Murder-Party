@@ -19,6 +19,13 @@ tag @s remove mp_captain
 
 tag @s remove mp_civilian_role_chosen
 
+clear @s simpleknives:iron_knife{MurderPartyJesterDecoy:1b}
+clear @s simpleknives:iron_knife{MurderPartyHitmanWeapon:1b}
+clear @s minecraft:glass_bottle{MurderPartyGasolineCan:1b}
+clear @s minecraft:flint_and_steel{MurderPartyArsonistIgnite:1b}
+scoreboard players set @s mp_arsonist_cooldown 0
+tag @s remove mp_arsonist_ready
+tag @s remove mp_doused
 tag @s remove mp_neutral
 tag @s remove mp_jester
 tag @s remove mp_arsonist

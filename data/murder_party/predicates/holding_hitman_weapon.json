@@ -1,0 +1,12 @@
+{
+  "condition": "minecraft:entity_properties",
+  "entity": "this",
+  "predicate": {
+    "equipment": {
+      "mainhand": {
+        "items": ["simpleknives:iron_knife"],
+        "nbt": "{MurderPartyHitmanWeapon:1b}"
+      }
+    }
+  }
+}

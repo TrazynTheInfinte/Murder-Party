@@ -1,0 +1,16 @@
+{
+  "criteria": {
+    "used": {
+      "trigger": "minecraft:using_item",
+      "conditions": {
+        "item": {
+          "items": ["minecraft:flint_and_steel"],
+          "nbt": "{MurderPartyArsonistIgnite:1b}"
+        }
+      }
+    }
+  },
+  "rewards": {
+    "function": "murder_party:neutral/arsonist_ignite_used"
+  }
+}

@@ -1,6 +1,6 @@
-# @s = this Round's Neutral. Kit (the target-locked knife) comes in a later
-# pass - this is assignment only, including picking the target.
+# @s = this Round's Neutral
 tag @s add mp_hitman
+give @s simpleknives:iron_knife{MurderPartyHitmanWeapon:1b} 1
 
 # target pool is every other living Participant - the Killer is a valid pick
 execute as @e[tag=mp_alive,tag=!mp_hitman,sort=random,limit=1] run tag @s add mp_hitman_target

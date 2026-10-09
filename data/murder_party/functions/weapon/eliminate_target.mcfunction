@@ -35,6 +35,15 @@ execute if entity @s[tag=mp_noisemaker] run tellraw @a [{"text":"[Murder Party] 
 
 clear @s simpleknives:iron_knife{MurderPartyVigilanteWeapon:1b}
 clear @s minecraft:goat_horn{MurderPartyCaptainHorn:1b}
+clear @s simpleknives:iron_knife{MurderPartyJesterDecoy:1b}
+clear @s simpleknives:iron_knife{MurderPartyHitmanWeapon:1b}
+clear @s minecraft:glass_bottle{MurderPartyGasolineCan:1b}
+clear @s minecraft:flint_and_steel{MurderPartyArsonistIgnite:1b}
+execute if entity @s[tag=mp_arsonist] run tag @e[tag=mp_doused] remove mp_doused
+
+# must run before mp_hitman_target would ever be stripped - it never is on
+# this path today, but the check itself still needs to see it - see ADR 0019
+function murder_party:neutral/convert_hitman_if_target_died
 
 tag @s remove mp_alive
 tag @s add mp_spectating

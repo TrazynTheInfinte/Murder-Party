@@ -6,6 +6,15 @@ execute if score #mp mp_state matches 1 if entity @s[tag=mp_saboteur] run clear 
 execute if score #mp mp_state matches 1 run clear @s simpleknives:iron_knife{MurderPartyVigilanteWeapon:1b}
 execute if score #mp mp_state matches 1 run clear @s minecraft:goat_horn{MurderPartyCaptainHorn:1b}
 execute if score #mp mp_state matches 1 if entity @s[tag=mp_captain] run team leave @s
+execute if score #mp mp_state matches 1 run clear @s simpleknives:iron_knife{MurderPartyJesterDecoy:1b}
+execute if score #mp mp_state matches 1 run clear @s simpleknives:iron_knife{MurderPartyHitmanWeapon:1b}
+execute if score #mp mp_state matches 1 run clear @s minecraft:glass_bottle{MurderPartyGasolineCan:1b}
+execute if score #mp mp_state matches 1 run clear @s minecraft:flint_and_steel{MurderPartyArsonistIgnite:1b}
+execute if score #mp mp_state matches 1 if entity @s[tag=mp_arsonist] run tag @e[tag=mp_doused] remove mp_doused
+
+# must run before mp_hitman_target is stripped below - see ADR 0019
+execute if score #mp mp_state matches 1 run function murder_party:neutral/convert_hitman_if_target_died
+
 execute if score #mp mp_state matches 1 run tag @s remove mp_alive
 execute if score #mp mp_state matches 1 run tag @s remove mp_killer
 execute if score #mp mp_state matches 1 run tag @s remove mp_masked_killer
