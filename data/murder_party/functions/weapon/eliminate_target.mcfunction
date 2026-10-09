@@ -1,7 +1,14 @@
 # corpse + inventory wipe only applies to real players - the corpse mod's
 # command requires a real player and would error on a Test Dummy
 execute unless entity @s[tag=mp_test_dummy] run clear @s
+
+# the corpse mod's "stuck weapon" display defaults to a plain Iron Sword
+# whenever the victim's mainhand is empty (confirmed from the mod's own code) -
+# briefly handing them a prop Iron Knife first makes it copy that instead, so
+# the Corpse's stuck weapon matches the real Weapon's look
+execute unless entity @s[tag=mp_test_dummy] run give @s simpleknives:iron_knife 1
 execute unless entity @s[tag=mp_test_dummy] run corpse test
+execute unless entity @s[tag=mp_test_dummy] run clear @s simpleknives:iron_knife
 execute unless entity @s[tag=mp_test_dummy] run summon minecraft:armor_stand ~ ~ ~ {Tags:["mp_corpse_marker"],Invisible:1b,Marker:1b,NoGravity:1b,Invulnerable:1b}
 
 # plant the Report Item in the Corpse's own lootable inventory (slot 9 is one
