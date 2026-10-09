@@ -18,6 +18,10 @@ scoreboard objectives add mp_pos_z dummy
 scoreboard objectives add mp_dist_sq dummy
 scoreboard objectives add mp_security_radius dummy
 scoreboard objectives add mp_radius_sq dummy
+scoreboard objectives add mp_neutral_force dummy
+scoreboard objectives add mp_neutral_eligible dummy
+scoreboard objectives add mp_neutral_roll dummy
+scoreboard objectives add mp_participant_count dummy
 
 team add mp_hidden
 team modify mp_hidden nametagVisibility never
@@ -36,5 +40,9 @@ scoreboard players set #mp mp_ready_phase 0
 # only sets a default the first time ever - a custom radius the admin set
 # survives every later /reload instead of being clobbered back to 15
 execute unless score #mp mp_security_radius matches -2147483648..2147483647 run scoreboard players set #mp mp_security_radius 15
+
+# only sets a default the first time ever - the admin's debug override for
+# testing Neutrals at 3 players survives every later /reload
+execute unless score #mp mp_neutral_force matches -2147483648..2147483647 run scoreboard players set #mp mp_neutral_force 0
 
 tellraw @a [{"text":"[Murder Party] datapack loaded","color":"gray"}]

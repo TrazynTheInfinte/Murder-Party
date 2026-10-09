@@ -15,6 +15,11 @@ execute if score #mp mp_state matches 1 run tag @s remove mp_vigilante
 execute if score #mp mp_state matches 1 run tag @s remove mp_noisemaker
 execute if score #mp mp_state matches 1 run tag @s remove mp_captain
 execute if score #mp mp_state matches 1 run tag @s remove mp_civilian_role_chosen
+execute if score #mp mp_state matches 1 run tag @s remove mp_neutral
+execute if score #mp mp_state matches 1 run tag @s remove mp_jester
+execute if score #mp mp_state matches 1 run tag @s remove mp_arsonist
+execute if score #mp mp_state matches 1 run tag @s remove mp_hitman
+execute if score #mp mp_state matches 1 run tag @s remove mp_hitman_target
 execute if score #mp mp_state matches 1 run tag @s add mp_spectating
 execute if score #mp mp_state matches 1 run gamemode spectator @s
 execute if score #mp mp_state matches 1 run tellraw @s [{"text":"[Murder Party] (debug) You have been eliminated.","color":"red"}]

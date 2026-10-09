@@ -1,5 +1,6 @@
 execute if entity @s[tag=mp_killer] run tellraw @a [{"text":"[Murder Party] ","color":"gold"},{"selector":"@s"},{"text":" was ejected. They were the Killer!","color":"dark_red","bold":true}]
-execute unless entity @s[tag=mp_killer] run tellraw @a [{"text":"[Murder Party] ","color":"gold"},{"selector":"@s"},{"text":" was ejected. They were an Innocent.","color":"green"}]
+execute if entity @s[tag=mp_neutral] run tellraw @a [{"text":"[Murder Party] ","color":"gold"},{"selector":"@s"},{"text":" was ejected. They were a Neutral.","color":"light_purple"}]
+execute unless entity @s[tag=mp_killer] unless entity @s[tag=mp_neutral] run tellraw @a [{"text":"[Murder Party] ","color":"gold"},{"selector":"@s"},{"text":" was ejected. They were an Innocent.","color":"green"}]
 
 execute if entity @s[tag=mp_killer] run clear @s simpleknives:iron_knife{MurderPartyWeapon:1b}
 execute if entity @s[tag=mp_masked_killer] run clear @s id_mask:id_mask
@@ -18,6 +19,11 @@ tag @s remove mp_vigilante
 tag @s remove mp_noisemaker
 tag @s remove mp_captain
 tag @s remove mp_civilian_role_chosen
+tag @s remove mp_neutral
+tag @s remove mp_jester
+tag @s remove mp_arsonist
+tag @s remove mp_hitman
+tag @s remove mp_hitman_target
 tag @s add mp_spectating
 gamemode spectator @s
 execute if entity @s[tag=mp_test_dummy] run kill @s

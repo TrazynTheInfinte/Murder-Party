@@ -19,6 +19,12 @@ tag @s remove mp_captain
 
 tag @s remove mp_civilian_role_chosen
 
+tag @s remove mp_neutral
+tag @s remove mp_jester
+tag @s remove mp_arsonist
+tag @s remove mp_hitman
+tag @s remove mp_hitman_target
+
 clear @s minecraft:paper{MurderPartyReportItem:1b}
 
 tag @s remove mp_meeting_used

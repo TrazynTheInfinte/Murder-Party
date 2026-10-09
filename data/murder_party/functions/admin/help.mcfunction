@@ -8,3 +8,4 @@ tellraw @s [{"text":"/scoreboard players set #mp mp_security_radius <N>","color"
 tellraw @s [{"text":"admin/set_saboteur_kit","color":"yellow"},{"text":" - stand near a chest/barrel of bound Create remotes, run this to link it as the Saboteur's starting kit","color":"gray"}]
 tellraw @s [{"text":"admin/force_start","color":"yellow"},{"text":" - starts a Round immediately, bypassing the 3-player join threshold","color":"gray"}]
 tellraw @s [{"text":"admin/force_stop","color":"yellow"},{"text":" - cancels the current Round, countdown, or Meeting","color":"gray"}]
+tellraw @s [{"text":"admin/toggle_force_neutral","color":"yellow"},{"text":" - debug only: lets a 3-player Round roll a Neutral Role, which otherwise needs 4+","color":"gray"}]

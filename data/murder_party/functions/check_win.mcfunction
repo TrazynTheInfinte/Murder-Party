@@ -1,6 +1,9 @@
 scoreboard players set #killers mp_count 0
 execute as @e[tag=mp_alive,tag=mp_killer] run scoreboard players add #killers mp_count 1
 
+# "not the Killer" rather than a literal Innocent check - this also counts any
+# living Neutral, which is intentional: the Killer's Win Condition requires
+# every Neutral eliminated too, same as every Innocent (ADR 0017)
 scoreboard players set #innocents mp_count 0
 execute as @e[tag=mp_alive,tag=!mp_killer] run scoreboard players add #innocents mp_count 1
 
