@@ -3,6 +3,7 @@ gamerule sendCommandFeedback false
 scoreboard objectives add mp_state dummy
 scoreboard objectives add mp_timer dummy
 scoreboard objectives add mp_count dummy
+scoreboard objectives add mp_ready_phase dummy
 scoreboard objectives add mp_cooldown dummy
 scoreboard objectives add mp_subtick dummy
 scoreboard objectives add mp_countdown dummy
@@ -30,6 +31,7 @@ team modify mp_captain_visible prefix {"text":"[captain] ","color":"gold"}
 scoreboard players set #mp mp_state 0
 scoreboard players set #mp mp_timer 0
 scoreboard players set #mp mp_subtick 0
+scoreboard players set #mp mp_ready_phase 0
 
 # only sets a default the first time ever - a custom radius the admin set
 # survives every later /reload instead of being clobbered back to 15

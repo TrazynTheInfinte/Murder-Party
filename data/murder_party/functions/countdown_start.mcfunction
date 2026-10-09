@@ -2,6 +2,10 @@ scoreboard players set #mp mp_countdown 5
 scoreboard players set #mp mp_subtick 0
 scoreboard players set #mp mp_state 2
 
+# the ready check is done its job - clear it so the next lobby starts fresh
+scoreboard players set #mp mp_ready_phase 0
+tag @e remove mp_ready
+
 title @a times 2 16 2
 tellraw @a [{"text":"[Murder Party] Round starting...","color":"gray"}]
 
