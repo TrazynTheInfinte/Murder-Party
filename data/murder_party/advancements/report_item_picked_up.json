@@ -1,0 +1,18 @@
+{
+  "criteria": {
+    "picked_up": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": ["minecraft:paper"],
+            "nbt": "{MurderPartyReportItem:1b}"
+          }
+        ]
+      }
+    }
+  },
+  "rewards": {
+    "function": "murder_party:report/on_pickup"
+  }
+}

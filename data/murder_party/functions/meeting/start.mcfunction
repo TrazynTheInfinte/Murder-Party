@@ -1,4 +1,5 @@
-tag @s add mp_meeting_used
+# spending the caller's Meeting Call is the caller's job, not this function's -
+# Reporting a Corpse calls this directly without spending one (ADR 0015)
 
 # a Meeting empties the arena of bodies along with everyone else
 kill @e[type=playercorpse:corpse]

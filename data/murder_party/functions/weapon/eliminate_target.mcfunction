@@ -4,6 +4,10 @@ execute unless entity @s[tag=mp_test_dummy] run clear @s
 execute unless entity @s[tag=mp_test_dummy] run corpse test
 execute unless entity @s[tag=mp_test_dummy] run summon minecraft:armor_stand ~ ~ ~ {Tags:["mp_corpse_marker"],Invisible:1b,Marker:1b,NoGravity:1b,Invulnerable:1b}
 
+# plant the Report Item in the Corpse's own lootable inventory (slot 9 is one
+# of the mod's generic storage slots, not one of its equipment slots 0/36-40)
+execute unless entity @s[tag=mp_test_dummy] at @s run data merge entity @e[type=playercorpse:corpse,distance=..1,limit=1] {Inventory:[{Slot:9b,Item:{id:"minecraft:paper",Count:1b,tag:{MurderPartyReportItem:1b,display:{Name:'{"text":"Written Report","italic":false}'}}}}]}
+
 execute unless entity @s[tag=mp_test_dummy] if entity @e[tag=mp_masked_killer] run schedule function murder_party:corpse/remove_short 400 append
 execute unless entity @s[tag=mp_test_dummy] unless entity @e[tag=mp_masked_killer] run schedule function murder_party:corpse/remove_long 2400 append
 

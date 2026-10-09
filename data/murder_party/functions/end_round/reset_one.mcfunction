@@ -19,6 +19,8 @@ tag @s remove mp_captain
 
 tag @s remove mp_civilian_role_chosen
 
+clear @s minecraft:paper{MurderPartyReportItem:1b}
+
 tag @s remove mp_meeting_used
 tag @s remove mp_has_voted
 scoreboard players set @s mp_vote 0
