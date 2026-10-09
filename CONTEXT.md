@@ -31,7 +31,7 @@ _Avoid_: Death, Kill
 The Killer's one-hit Elimination of another Participant, dealt with the Weapon. Leaves a Corpse.
 
 **Corpse**:
-The visual remnant a Strike leaves at the victim's location. Purely cosmetic — no interaction, no bearing on any Win Condition. Removed after a lifespan set by which Killer variant struck them, or instantly if a Meeting is called.
+The visual remnant a Strike leaves at the victim's location. No bearing on any Win Condition. Carries a Report Item until Reported or removed. Removed after a lifespan set by which Killer variant struck them, or instantly if a Meeting is called.
 _Avoid_: Body, dead body
 
 **Killer Variant**:
@@ -70,6 +70,13 @@ A communication channel exclusive to Spectating participants, offered as an alte
 
 **Meeting**:
 A temporary pause in free play where every living Participant gathers at the Meeting Point to discuss and Vote.
+
+**Report**:
+A living Participant triggering a Meeting by looting a Corpse's Report Item. Unlike the Panic Button or the Captain's horn, Reporting does not spend the Reporter's Meeting Call. Announces the victim's name and the Reporter's currently-displayed name — deliberately not the Reporter's real identity if they are a disguised Masked Killer, letting them Report under their Mask's identity.
+_Avoid_: Report Body (the Among Us term this is inspired by, but Reporting here is triggered by looting, not a deliberate action at the Corpse)
+
+**Report Item**:
+The single tracked item instance a Corpse carries. Entering any living Participant's inventory triggers a Report and deletes the item.
 
 **Panic Button**:
 The single placed block a living Participant presses to call a Meeting, located at the Meeting Point. Pressing it spends that Participant's Meeting Call.

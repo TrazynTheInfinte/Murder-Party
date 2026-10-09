@@ -1,0 +1,5 @@
+# Report announcements use the Reporter's currently-displayed identity, not their real one
+
+When a Report announces who called the Meeting, it uses whatever name the Reporter is currently displaying — the same selector-resolved name used everywhere else in the datapack. For a disguised Masked Killer, that is their Mask's identity, not their real account name.
+
+This is the opposite choice from the Killer-wins announcement, which deliberately strips the Mask first so the real Killer is named at the Round's end. Here the Mask is left on by design: it lets a Masked Killer Report a Corpse — including, absurdly, their own latest victim's — while still appearing to be whoever they're disguised as. That absurdity (a victim's name "finding" their own body) is accepted rather than special-cased, because preventing it would mean stripping the Mask for Reports too, which removes the entire point of the Mask existing: letting the Killer hide in plain sight while still taking actions that look like an Innocent's.
