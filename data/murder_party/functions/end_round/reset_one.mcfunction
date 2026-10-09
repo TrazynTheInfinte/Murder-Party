@@ -49,3 +49,8 @@ effect clear @s
 effect give @s minecraft:instant_health 1 9 true
 effect give @s minecraft:saturation 1 255 true
 execute at @e[tag=mp_lobby_point,limit=1] run tp @s ~ ~ ~
+
+# stay queued for the next Round automatically - run /function murder_party:leave
+# to opt out instead of rejoining every time
+tag @s add mp_joined
+tellraw @s [{"text":"[Murder Party] You're queued for the next Round. Run /function murder_party:leave to opt out.","color":"gray"}]
