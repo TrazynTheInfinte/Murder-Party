@@ -4,7 +4,7 @@
   "predicate": {
     "equipment": {
       "mainhand": {
-        "items": ["simpleknives:iron_knife"],
+        "items": ["simpleknives:iron_knife", "minecraft:iron_sword"],
         "nbt": "{MurderPartyWeapon:1b}"
       }
     }

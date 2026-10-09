@@ -1,8 +1,12 @@
 execute unless score #mp mp_state matches 1 run tellraw @s [{"text":"[Murder Party] No active round.","color":"red"}]
 
 execute if score #mp mp_state matches 1 if entity @s[tag=mp_killer] run clear @s simpleknives:iron_knife{MurderPartyWeapon:1b}
+execute if score #mp mp_state matches 1 if entity @s[tag=mp_killer] run clear @s minecraft:iron_sword{MurderPartyWeapon:1b}
 execute if score #mp mp_state matches 1 if entity @s[tag=mp_masked_killer] run clear @s id_mask:id_mask
 execute if score #mp mp_state matches 1 if entity @s[tag=mp_saboteur] run clear @s create:linked_controller
+execute if score #mp mp_state matches 1 if entity @s[tag=mp_slasher] run clear @s id_mask:id_mask
+execute if score #mp mp_state matches 1 if entity @s[tag=mp_slasher] run effect clear @s minecraft:glowing
+execute if score #mp mp_state matches 1 if entity @s[tag=mp_slasher] run team join mp_hidden @s
 execute if score #mp mp_state matches 1 run clear @s simpleknives:iron_knife{MurderPartyVigilanteWeapon:1b}
 execute if score #mp mp_state matches 1 run clear @s minecraft:goat_horn{MurderPartyCaptainHorn:1b}
 execute if score #mp mp_state matches 1 if entity @s[tag=mp_captain] run team leave @s
@@ -19,6 +23,7 @@ execute if score #mp mp_state matches 1 run tag @s remove mp_alive
 execute if score #mp mp_state matches 1 run tag @s remove mp_killer
 execute if score #mp mp_state matches 1 run tag @s remove mp_masked_killer
 execute if score #mp mp_state matches 1 run tag @s remove mp_saboteur
+execute if score #mp mp_state matches 1 run tag @s remove mp_slasher
 execute if score #mp mp_state matches 1 run tag @s remove mp_killer_variant_chosen
 execute if score #mp mp_state matches 1 run tag @s remove mp_vigilante
 execute if score #mp mp_state matches 1 run tag @s remove mp_noisemaker

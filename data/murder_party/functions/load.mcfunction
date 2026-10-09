@@ -34,6 +34,12 @@ team add mp_captain_visible
 team modify mp_captain_visible nametagVisibility always
 team modify mp_captain_visible prefix {"text":"[captain] ","color":"gold"}
 
+# the Slasher's permanent red glow - nametag stays hidden like every other
+# Killer, only the glow outline's color comes from this team
+team add mp_slasher_glow
+team modify mp_slasher_glow nametagVisibility never
+team modify mp_slasher_glow color red
+
 scoreboard players set #mp mp_state 0
 scoreboard players set #mp mp_timer 0
 scoreboard players set #mp mp_subtick 0

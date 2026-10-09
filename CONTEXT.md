@@ -35,7 +35,7 @@ The visual remnant a Strike leaves at the victim's location. No bearing on any W
 _Avoid_: Body, dead body
 
 **Killer Variant**:
-Which concrete form the Round's Killer takes — currently Masked Killer or Saboteur, with more addable later. Chosen privately by the Killer during the Round's start countdown; defaults to Saboteur if not chosen in time.
+Which concrete form the Round's Killer takes — currently Masked Killer, Saboteur, or The Slasher, with more addable later. Chosen privately by the Killer during the Round's start countdown; defaults to Saboteur if not chosen in time.
 _Avoid_: Role (Role is the Killer/Innocent assignment; Killer Variant is which concrete Killer the Round's Killer is this time)
 
 **Masked Killer**:
@@ -46,13 +46,17 @@ _Avoid_: Impersonator, disguised killer
 A Killer Variant. Starts the Round with a personal kit of Create mod remotes, bound and sized however the admin staged them beforehand — a personal toolkit, not a shared resource like the Monitor.
 _Avoid_: default Killer, remote killer
 
+**The Slasher**:
+A Killer Variant, traded entirely for stealth: a sword-shaped Weapon with half the usual Weapon Cooldown, a fixed costume unrelated to any victim (unlike the Masked Killer's Mask), a permanent red glow visible through walls, and immunity to Ejection by Vote — an attempt to vote them out resolves exactly like a tied vote.
+_Avoid_: Jason, slasher killer (the Variant's name is "The Slasher," not a reference to the costume's own flavor name)
+
 **Mask**:
 The single tracked disguise instance a Masked Killer holds, always showing their most recently Struck victim. A new Strike replaces it; it never accumulates more than one at a time.
 _Avoid_: ID Mask, disguise (names the item type, not the specific instance that matters)
 
 **Weapon**:
-The single knife instance given to the Killer at Round start. Only this specific instance can Strike; any other copy of the same item, found or crafted elsewhere, is an ordinary tool.
-_Avoid_: Knife (names the item type, not the specific instance that matters)
+The single tracked item instance given to the Killer at Round start — a knife for most Killer Variants, a sword for The Slasher. Only this specific instance can Strike; any other copy of the same item, found or crafted elsewhere, is an ordinary tool.
+_Avoid_: Knife (names the item type most Variants use, not the specific instance that matters — and it isn't even accurate for The Slasher)
 
 **Weapon Cooldown**:
 The period, starting at Round start and restarting after every Strike, during which the Weapon cannot Strike again.

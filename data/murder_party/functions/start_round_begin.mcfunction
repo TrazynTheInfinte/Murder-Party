@@ -7,12 +7,17 @@ execute as @e[tag=mp_saboteur] run function murder_party:killer/give_kit
 
 execute as @e[tag=mp_masked_killer] run tellraw @s [{"text":"[Murder Party] You are the Masked Killer!","color":"dark_red","bold":true}]
 execute as @e[tag=mp_saboteur] run tellraw @s [{"text":"[Murder Party] You are the Saboteur!","color":"dark_red","bold":true}]
+execute as @e[tag=mp_slasher] run tellraw @s [{"text":"[Murder Party] You are the Slasher!","color":"dark_red","bold":true}]
 
 execute as @e[tag=mp_alive] run function murder_party:place_participant
 
 # Captain's one deliberate exception to the hidden-nametag rule - overrides
 # the mp_hidden team place_participant just put them on
 execute as @e[tag=mp_captain] run team join mp_captain_visible @s
+
+# must run after place_participant too - it joins its own team for the red
+# glow, which place_participant's mp_hidden join would otherwise override
+execute as @e[tag=mp_slasher] run function murder_party:killer/give_kit_slasher
 
 tellraw @a[tag=mp_alive,tag=!mp_killer] [{"text":"[Murder Party] You are an Innocent. Find the Killer!","color":"green"}]
 execute as @e[tag=mp_vigilante] run tellraw @s [{"text":"[Murder Party] You are the Vigilante. One strike on the Killer is all you get.","color":"gold","bold":true}]

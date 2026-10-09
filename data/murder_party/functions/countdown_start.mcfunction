@@ -14,6 +14,7 @@ tellraw @a [{"text":"[Murder Party] Round starting...","color":"gray"}]
 tag @e remove mp_killer
 tag @e remove mp_masked_killer
 tag @e remove mp_saboteur
+tag @e remove mp_slasher
 tag @e remove mp_killer_variant_chosen
 tag @e remove mp_neutral
 tag @e remove mp_jester

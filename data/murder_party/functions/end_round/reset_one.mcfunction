@@ -1,6 +1,8 @@
 clear @s simpleknives:iron_knife{MurderPartyWeapon:1b}
+clear @s minecraft:iron_sword{MurderPartyWeapon:1b}
 scoreboard players set @s mp_cooldown 0
 tag @s remove mp_weapon_drawn
+tag @s remove mp_slasher
 
 clear @s id_mask:id_mask
 tag @s remove mp_masked_killer
