@@ -104,6 +104,10 @@ _Avoid_: Spawn, hub
 **Arena**:
 The bounded region within which a Round takes place.
 
+**Map**:
+A numbered, admin-authored collection of this Round's Spawn Points, Security Room, Meeting Point, and Saboteur kit location — one Map is randomly assigned to each Round at its start. The Lobby Point is shared across every Map, not part of any one of them.
+_Avoid_: Arena (Arena is a region concept and isn't currently enforced by any code; Map is about which set of location markers a Round uses)
+
 **Win Condition**:
 The outcome that ends a Round with a declared winning side: Innocents win if the Killer is eliminated (by Ejection, or a role's one-shot elimination like the Vigilante's or Hitman's) or the Round Timer expires; the Killer wins if every Innocent and every Neutral is eliminated first.
 

@@ -1,0 +1,7 @@
+# Maps work by swapping the existing generic location tags onto the chosen Map's markers
+
+Each Map's Spawn Points, Meeting Point, Security Room, and Saboteur kit are authored with their own numbered tags (`mp_map1_spawn_point`, `mp_map2_spawn_point`, and so on). At Round start, after a Map is picked, its markers get the *existing* generic tags (`mp_spawn_point`, `mp_meeting_point`, `mp_security_room`) added on top, for the Round's duration; they're stripped again before the next Round picks a (possibly different) Map. The Security Room's radius does the same trick as a number: each Map stores its own, copied into the existing single `mp_security_radius` variable at Round start.
+
+The alternative was teaching every function that currently looks for one of these generic tags — `place_participant`, `meeting/check_press`, the Monitor's return-to-room distance check, the Saboteur's `give_kit` — to look up "whichever Map is active" itself. That would work, but it touches a much wider set of already-working, unrelated systems for the same result. Tag-swapping means every one of those functions keeps working completely unchanged; the only new code is the per-Map admin setup commands and the one function that picks a Map and re-tags its markers.
+
+This is a deliberate, if slightly unusual-looking, choice: a future reader finding `mp_spawn_point` dynamically appearing and disappearing on different armor stands between Rounds, rather than being a fixed tag set once by an admin command, could easily mistake it for a bug.
