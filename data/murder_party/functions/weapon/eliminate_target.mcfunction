@@ -16,7 +16,7 @@ execute if entity @e[tag=mp_masked_killer] if entity @s[name=spawnvillager] run 
 execute if entity @e[tag=mp_masked_killer] if entity @s[name=ninjamwuppy] run function murder_party:mask/grant_ninjamwuppy
 execute if entity @e[tag=mp_masked_killer] if entity @s[name=cyanoc_stellerii] run function murder_party:mask/grant_cyanoc_stellerii
 execute if entity @e[tag=mp_masked_killer] if entity @s[name=Nova_Zenith] run function murder_party:mask/grant_nova_zenith
-execute if entity @e[tag=mp_masked_killer] if entity @s[name=mister__woo] run function murder_party:mask/grant_mister__woo
+execute if entity @e[tag=mp_masked_killer] if entity @s[name=Mister__Woo] run function murder_party:mask/grant_mister__woo
 
 # Noisemaker only: a global alarm instead of silence about who died
 execute if entity @s[tag=mp_noisemaker] run playsound minecraft:entity.wither.spawn master @a ~ ~ ~ 1 1
