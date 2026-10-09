@@ -1,14 +1,6 @@
-# spending the caller's Meeting Call is the caller's job, not this function's -
-# Reporting a Corpse calls this directly without spending one (ADR 0015)
-
-# a Meeting empties the arena of bodies along with everyone else
-kill @e[type=playercorpse:corpse]
-kill @e[tag=mp_corpse_marker]
-
-execute as @e[tag=mp_alive] at @e[tag=mp_meeting_point,limit=1] run tp @s ~ ~ ~
-
-scoreboard players set #mp mp_meeting_timer 60
-scoreboard players set #mp mp_subtick 0
-scoreboard players set #mp mp_state 3
-
-tellraw @a [{"text":"[Murder Party] A Meeting has been called! Discuss.","color":"gold","bold":true}]
+# if the Arsonist already has everyone Doused, the next Meeting - called by
+# anyone, for any reason - ignites instead of proceeding normally. Actually
+# using the Flint and Steel doesn't work: Adventure mode blocks it, and flint
+# and steel has no "use" action at all without a block to target anyway.
+execute if entity @e[tag=mp_arsonist_ready] as @e[tag=mp_arsonist_ready] run function murder_party:neutral/arsonist_ignite
+execute unless entity @e[tag=mp_arsonist_ready] run function murder_party:meeting/start_discussion

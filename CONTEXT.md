@@ -118,7 +118,7 @@ A Neutral's own win condition, satisfied independently of the Round's Win Condit
 A Neutral. Personal Win is being Ejected. Carries a decoy knife, indistinguishable at a glance from the Weapon but with none of its effects, to bait suspicion onto them.
 
 **Arsonist**:
-A Neutral. Personal Win is eliminating every other Participant — the Killer included — achieved by Dousing every one of them, then igniting.
+A Neutral. Personal Win is eliminating every other Participant — the Killer included — achieved by Dousing every one of them, then igniting at the next Meeting, however it's called.
 
 **Dousing**:
 The Arsonist's private marking of a Participant, applied with their Gasoline Can and invisible to the victim. Persists until death, including through Meetings.

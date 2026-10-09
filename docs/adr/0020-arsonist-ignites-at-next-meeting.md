@@ -1,0 +1,5 @@
+# The Arsonist ignites at the next Meeting, not by using the Flint and Steel
+
+Once everyone else is Doused, the Arsonist is still handed a Flint and Steel, but using it does nothing. Instead, the very next Meeting that gets called - by anyone, for any reason - triggers the ignition and the Arsonist's Personal Win, before any discussion or voting happens.
+
+This replaces the originally-planned design of right-clicking the Flint and Steel to ignite. That turned out not to work at all: Adventure mode (which every Participant is in during a Round) blocks the block-targeted interaction flint and steel needs, and more fundamentally, flint and steel has no "use" action whatsoever without a block to aim at - there was never a reliable moment for a `minecraft:using_item` advancement to fire. Rather than fight the item's own interaction model, the next Meeting became the trigger. The Flint and Steel stays in the Arsonist's inventory anyway, as the signal that they're ready - it's just flavor now, not the mechanism.
