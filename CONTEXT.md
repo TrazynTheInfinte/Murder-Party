@@ -13,7 +13,7 @@ Any entity taking part in a Round — a real player or a Test Dummy. The Round's
 _Avoid_: Player (too narrow — excludes Test Dummies)
 
 **Role**:
-The hidden assignment of a Participant as Killer or Innocent, decided at Round start and held for the Round's duration.
+The hidden assignment of a Participant as Killer, Innocent, or Neutral, decided at Round start and held for the Round's duration.
 
 **Killer**:
 The abstract template every Killer Variant extends — shares the goal (eliminate every Innocent before the Round Timer expires or they are Ejected) and core mechanics (the Weapon, Weapon Cooldown, invincibility rules) across all of them. Never itself selectable or playable standalone: every Round's Killer ends up as exactly one concrete Killer Variant.
@@ -105,7 +105,26 @@ _Avoid_: Spawn, hub
 The bounded region within which a Round takes place.
 
 **Win Condition**:
-The outcome that ends a Round with a declared winning side: Innocents win if the Killer is Ejected or the Round Timer expires; the Killer wins if every Innocent is eliminated first.
+The outcome that ends a Round with a declared winning side: Innocents win if the Killer is eliminated (by Ejection, or a role's one-shot elimination like the Vigilante's or Hitman's) or the Round Timer expires; the Killer wins if every Innocent and every Neutral is eliminated first.
+
+**Neutral**:
+A third Role, aligned with neither the Killer nor the Innocents, assigned to at most one Participant per Round and pursuing a Personal Win independent of the Round's Win Condition. Still eliminable by the Killer's Weapon exactly like an Innocent, and still counts toward the Killer's Win Condition — lower priority for the Killer to hunt than Innocents, but still required dead for the Killer to win. Never offered a Civilian Role, since a Neutral is not an Innocent.
+_Avoid_: Neutral Role (ambiguous with Civilian Role, which is a layer *on* Innocent — Neutral is a Role in its own right)
+
+**Personal Win**:
+A Neutral's own win condition, satisfied independently of the Round's Win Condition. Achieving it does not by itself end the Round, except where it structurally must (the Arsonist's Personal Win requires every other Participant already dead).
+
+**Jester**:
+A Neutral. Personal Win is being Ejected. Carries a decoy knife, indistinguishable at a glance from the Weapon but with none of its effects, to bait suspicion onto them.
+
+**Arsonist**:
+A Neutral. Personal Win is eliminating every other Participant — the Killer included — achieved by Dousing every one of them, then igniting.
+
+**Dousing**:
+The Arsonist's private marking of a Participant, applied with their Gasoline Can and invisible to the victim. Persists until death, including through Meetings.
+
+**Hitman**:
+A Neutral, assigned one specific living Participant (the Killer is a valid pick) as their target at Round start — known to the Hitman, but the target is only told they're targeted, not by whom. Personal Win is eliminating that target with a single-use knife that only works on them. If the target dies by other means first, the Hitman converts into a Jester.
 
 **Cancellation**:
 A Round ending prematurely by admin action, with no Win Condition reached and no Role reveal.
