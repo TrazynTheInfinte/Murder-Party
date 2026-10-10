@@ -87,8 +87,8 @@ The single placed block a living Participant presses to call a Meeting, located 
 _Avoid_: Meeting Horn (the originally-planned item this supersedes), emergency button, horn item
 
 **Meeting Call**:
-A living Participant's one-time allowance, per Round, to trigger a Meeting by pressing the Panic Button.
-_Avoid_: Horn use, button press (names the mechanism, not the allowance it spends)
+A living Participant's one-time allowance, per Round, to trigger a Meeting by pressing the Panic Button. The Captain's horn is a separate, repeatable ability (its own cooldown, not this allowance) and a Report doesn't spend this either (ADR 0015) - this is specifically the Panic Button's own gate.
+_Avoid_: Button press (names the mechanism, not the allowance it spends)
 
 **Meeting Point**:
 The single location all living Participants are gathered to for a Meeting, and where the Panic Button is located. Set once per map and reused by every Round until changed.
@@ -156,7 +156,7 @@ A Civilian Role. Holds a single-use knife that Eliminates the Killer if struck w
 A Civilian Role. Being Struck broadcasts a global alarm naming them, instead of the usual proximity-only cue — reveals who died, not where.
 
 **Captain**:
-A Civilian Role. Marked with a permanently visible nametag for the Round — the one deliberate exception to the game's otherwise-universal hidden-nametag rule. Can call a Meeting from anywhere, not just the Meeting Point.
+A Civilian Role. Marked with a permanently visible nametag for the Round — the one deliberate exception to the game's otherwise-universal hidden-nametag rule. Can call a Meeting from anywhere, not just the Meeting Point, repeatedly — gated by its own 2-minute cooldown (paused during Meetings) rather than the shared Meeting Call.
 
 ## Security Room
 

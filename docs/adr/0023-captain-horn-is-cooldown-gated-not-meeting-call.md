@@ -1,0 +1,5 @@
+# The Captain's horn is a repeatable, cooldown-gated ability, not a one-per-Round Meeting Call
+
+The horn no longer spends the Captain's Meeting Call. It's now a standalone repeatable ability: usable any time the Captain wants, limited only by its own 2-minute cooldown, which pauses whenever a Meeting is active (it only ticks down during free play, same as the Weapon Cooldown and the Arsonist's dousing cooldown).
+
+This reverses the original design (the Captain's horn was deliberately built to share the Panic Button's one-time Meeting Call, on the reasoning that it was "an alternate trigger for the same Meeting, not a separate unlimited resource"). In practice that made the Captain's horn barely distinguishable from the Panic Button - once used, it was spent for the Round just like everyone else's one Call - and gave the Captain, and whoever else still had an unspent Call, a way to chain Meetings back-to-back with no real brake on it. A repeatable, cooldown-gated horn is the opposite shape: unlimited over the course of a Round, but rate-limited moment to moment, which is what actually stops meeting-spam instead of just making the first spam attempt the last one.
