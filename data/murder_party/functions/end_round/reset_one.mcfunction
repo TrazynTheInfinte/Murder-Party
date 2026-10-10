@@ -17,6 +17,7 @@ tag @s remove mp_vigilante
 tag @s remove mp_noisemaker
 
 clear @s minecraft:goat_horn{MurderPartyCaptainHorn:1b}
+scoreboard players set @s mp_captain_horn_cooldown 0
 tag @s remove mp_captain
 
 tag @s remove mp_civilian_role_chosen

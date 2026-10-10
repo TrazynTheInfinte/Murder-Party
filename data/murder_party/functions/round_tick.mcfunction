@@ -8,6 +8,7 @@ scoreboard players add #mp mp_subtick 1
 execute if score #mp mp_subtick matches 20.. run scoreboard players set #mp mp_subtick 0
 execute if score #mp mp_subtick matches 0 run function murder_party:weapon/tick_cooldowns
 execute if score #mp mp_subtick matches 0 run function murder_party:neutral/tick_cooldowns
+execute if score #mp mp_subtick matches 0 run function murder_party:captain/tick_cooldowns
 
 execute as @e[tag=mp_killer,tag=mp_alive] run function murder_party:weapon/check_drawn
 
