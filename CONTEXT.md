@@ -28,7 +28,7 @@ The removal of a Participant from active play, by Strike or by Ejection, moving 
 _Avoid_: Death, Kill
 
 **Strike**:
-The Killer's one-hit Elimination of another Participant, dealt with the Weapon. Leaves a Corpse.
+The Killer's one-hit Elimination of another Participant, dealt with the Weapon. Leaves a Corpse — unless the target is Protected, in which case it's blocked entirely and leaves no Corpse.
 
 **Corpse**:
 The visual remnant a Strike leaves at the victim's location. No bearing on any Win Condition. Carries a Report Item until Reported or removed. Removed after a lifespan set by which Killer variant struck them, or instantly if a Meeting is called.
@@ -132,7 +132,7 @@ A Neutral. Personal Win is eliminating every other Participant — the Killer in
 The Arsonist's private marking of a Participant, applied with their Gasoline Can and invisible to the victim. Persists until death, including through Meetings.
 
 **Hitman**:
-A Neutral, assigned one specific living Participant (the Killer is a valid pick) as their target at Round start — known to the Hitman, but the target is only told they're targeted, not by whom. Personal Win is eliminating that target with a single-use knife that only works on them. If the target dies by other means first, the Hitman converts into a Jester.
+A Neutral, assigned one specific living Participant (the Killer is a valid pick) as their target at Round start — known to the Hitman, but the target is only told they're targeted, not by whom. Personal Win is eliminating that target with a single-use knife that only works on them. Striking a Protected target puts the knife on a 1-minute cooldown rather than ending the attempt. If the target dies by other means first, the Hitman converts into a Jester.
 
 **Cancellation**:
 A Round ending prematurely by admin action, with no Win Condition reached and no Role reveal.
@@ -150,13 +150,20 @@ _Avoid_: Innocent Variant (deliberately a different term from Killer Variant —
 An Innocent's private pick (or decline) from a random pair of Civilian Roles offered during the Round's start countdown, capped at one Participant per Role per Round.
 
 **Vigilante**:
-A Civilian Role. Holds a single-use knife that Eliminates the Killer if struck with it — any other target just breaks it for nothing, with no further consequence to the Vigilante beyond the wasted shot.
+A Civilian Role. Holds a single-use knife that Eliminates the Killer if struck with it. Striking a Protected target instead puts the knife on a 1-minute cooldown rather than breaking it, so a correct-but-blocked guess can still be tried again; any other wrong target just breaks it for nothing, with no further consequence to the Vigilante beyond the wasted shot.
 
 **Noisemaker**:
 A Civilian Role. Being Struck broadcasts a global alarm naming them, instead of the usual proximity-only cue — reveals who died, not where.
 
 **Captain**:
 A Civilian Role. Marked with a permanently visible nametag for the Round — the one deliberate exception to the game's otherwise-universal hidden-nametag rule. Can call a Meeting from anywhere, not just the Meeting Point, repeatedly — gated by its own 2-minute cooldown (paused during Meetings) rather than the shared Meeting Call.
+
+**Bodyguard**:
+A Civilian Role. Secretly and permanently picks one Participant — blind to their actual Role, so the pick can turn out to be the Killer — to grant Protected status to, using a single-use Guard Badge consumed the instant it's used.
+
+**Protected**:
+A status the Bodyguard grants their chosen Participant. Blocks the next Strike, Vigilante knife, or Hitman knife aimed at them entirely — no Corpse, no Mask grant, no other side effect, as if the attempt never happened. Does not block Ejection. Only the blocked attacker is told; neither the Protected Participant nor the Bodyguard ever learns it happened.
+_Avoid_: Shielded, saved (name the outcome, not the specific status this mechanic tracks)
 
 ## Security Room
 
