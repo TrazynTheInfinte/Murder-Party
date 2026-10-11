@@ -10,3 +10,4 @@ tellraw @s [{"text":"admin/map1/set_saboteur_kit","color":"yellow"},{"text":" - 
 tellraw @s [{"text":"admin/force_start","color":"yellow"},{"text":" - starts a Round immediately, bypassing the 3-player join threshold","color":"gray"}]
 tellraw @s [{"text":"admin/force_stop","color":"yellow"},{"text":" - cancels the current Round, countdown, or Meeting","color":"gray"}]
 tellraw @s [{"text":"admin/toggle_force_neutral","color":"yellow"},{"text":" - debug only: lets a 3-player Round roll a Neutral Role, which otherwise needs 4+","color":"gray"}]
+tellraw @s [{"text":"admin/remind","color":"yellow"},{"text":" - sends everyone a clickable Join/Leave Queue button","color":"gray"}]
