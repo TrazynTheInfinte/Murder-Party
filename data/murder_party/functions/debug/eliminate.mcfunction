@@ -15,6 +15,7 @@ execute if score #mp mp_state matches 1 run clear @s simpleknives:iron_knife{Mur
 execute if score #mp mp_state matches 1 run clear @s simpleknives:iron_knife{MurderPartyHitmanWeapon:1b}
 execute if score #mp mp_state matches 1 run clear @s minecraft:glass_bottle{MurderPartyGasolineCan:1b}
 execute if score #mp mp_state matches 1 run clear @s minecraft:flint_and_steel{MurderPartyArsonistIgnite:1b}
+execute if score #mp mp_state matches 1 run clear @s minecraft:spyglass{MurderPartyTaskSpyglass:1b}
 execute if score #mp mp_state matches 1 if entity @s[tag=mp_arsonist] run tag @e[tag=mp_doused] remove mp_doused
 
 # must run before mp_hitman_target is stripped below - see ADR 0019

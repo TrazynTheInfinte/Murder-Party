@@ -31,6 +31,25 @@ scoreboard objectives add mp_timer_minutes dummy
 scoreboard objectives add mp_timer_seconds dummy
 scoreboard objectives add mp_const_ticks_per_second dummy
 scoreboard objectives add mp_const_seconds_per_minute dummy
+scoreboard objectives add mp_task_point_id dummy
+scoreboard objectives add mp_task_point_x dummy
+scoreboard objectives add mp_task_point_y dummy
+scoreboard objectives add mp_task_point_z dummy
+scoreboard objectives add mp_task_point_next_id dummy
+scoreboard objectives add mp_task1_id dummy
+scoreboard objectives add mp_task2_id dummy
+scoreboard objectives add mp_task3_id dummy
+scoreboard objectives add mp_task1_done dummy
+scoreboard objectives add mp_task2_done dummy
+scoreboard objectives add mp_task3_done dummy
+scoreboard objectives add mp_task_standstill_ticks dummy
+scoreboard objectives add mp_task_cur_x dummy
+scoreboard objectives add mp_task_cur_y dummy
+scoreboard objectives add mp_task_cur_z dummy
+scoreboard objectives add mp_task_prev_x dummy
+scoreboard objectives add mp_task_prev_y dummy
+scoreboard objectives add mp_task_prev_z dummy
+scoreboard objectives add mp_task_complete_amount dummy
 
 scoreboard players set #mp mp_const_ticks_per_second 20
 scoreboard players set #mp mp_const_seconds_per_minute 60

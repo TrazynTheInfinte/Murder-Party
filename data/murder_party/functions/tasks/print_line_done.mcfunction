@@ -1,0 +1,2 @@
+# @s = the matched Task Point entity; mp_task_checking tags the recipient
+tellraw @a[tag=mp_task_checking,limit=1] [{"text":"[Murder Party] Task: ","color":"gray"},{"nbt":"CustomName","entity":"@s","color":"yellow"},{"text":" (","color":"gray"},{"score":{"name":"@s","objective":"mp_task_point_x"}},{"text":", ","color":"gray"},{"score":{"name":"@s","objective":"mp_task_point_y"}},{"text":", ","color":"gray"},{"score":{"name":"@s","objective":"mp_task_point_z"}},{"text":") - Done","color":"green"}]

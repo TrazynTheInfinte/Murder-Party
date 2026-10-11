@@ -14,4 +14,6 @@ execute if score #mp mp_subtick matches 0 run function murder_party:round_timer/
 
 execute as @e[tag=mp_killer,tag=mp_alive] run function murder_party:weapon/check_drawn
 
+function murder_party:tasks/tick_standstill
+
 execute if score #mp mp_state matches 1 run function murder_party:meeting/check_press

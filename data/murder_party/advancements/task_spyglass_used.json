@@ -1,0 +1,16 @@
+{
+  "criteria": {
+    "used": {
+      "trigger": "minecraft:using_item",
+      "conditions": {
+        "item": {
+          "items": ["minecraft:spyglass"],
+          "nbt": "{MurderPartyTaskSpyglass:1b}"
+        }
+      }
+    }
+  },
+  "rewards": {
+    "function": "murder_party:tasks/spyglass_used"
+  }
+}

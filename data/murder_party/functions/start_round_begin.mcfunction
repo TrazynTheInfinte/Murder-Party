@@ -32,3 +32,9 @@ scoreboard players set #mp mp_state 1
 tellraw @a [{"text":"[Murder Party] Round started! ","color":"dark_red"},{"text":"Find the Killer before time runs out.","color":"gray"}]
 
 function murder_party:round_timer/create
+
+# Tasks: every Innocent gets a real Checklist; the Killer gets one too, made
+# of the same real Task Points, purely for blend-in (ADR 0027/0029).
+# Neutrals don't participate - not part of the agreed scope.
+execute as @e[tag=mp_alive,tag=!mp_killer,tag=!mp_neutral] run function murder_party:tasks/assign_checklist
+execute as @e[tag=mp_killer] run function murder_party:tasks/assign_checklist

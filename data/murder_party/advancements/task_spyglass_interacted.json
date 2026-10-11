@@ -1,0 +1,16 @@
+{
+  "criteria": {
+    "used": {
+      "trigger": "minecraft:player_interacted_with_entity",
+      "conditions": {
+        "item": {
+          "items": ["minecraft:spyglass"],
+          "nbt": "{MurderPartyTaskSpyglass:1b}"
+        }
+      }
+    }
+  },
+  "rewards": {
+    "function": "murder_party:tasks/instant_task_used"
+  }
+}

@@ -9,5 +9,8 @@ tag @e remove mp_spawn_point
 tag @e remove mp_meeting_point
 tag @e remove mp_security_room
 tag @e remove mp_saboteur_kit
+tag @e remove mp_task_point
+tag @e remove mp_task_point_instant
+tag @e remove mp_task_point_standstill
 
 execute if score #mp mp_active_map matches 1 run function murder_party:map/apply_map1
