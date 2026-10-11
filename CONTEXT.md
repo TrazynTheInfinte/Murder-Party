@@ -165,6 +165,22 @@ A Civilian Role. Secretly and permanently picks one Participant — blind to the
 A status the Bodyguard grants their chosen Participant. Blocks the next Strike, Vigilante knife, or Hitman knife aimed at them entirely — no Corpse, no Mask grant, no other side effect, as if the attempt never happened. Does not block Ejection. Only the blocked attacker is told; neither the Protected Participant nor the Bodyguard ever learns it happened.
 _Avoid_: Shielded, saved (name the outcome, not the specific status this mechanic tracks)
 
+**Task**:
+An optional activity at a Task Point - either instant-interact or stand-still for a few seconds. Completing one for real shortens the Round Timer; the Killer's own Checklist is made of real Task Points too, purely for blend-in, with no effect on the Timer when "completed."
+_Avoid_: Chore, objective
+
+**Task Point**:
+An admin-placed, per-Map location where a Task happens - either an instant-interact point or a stand-still point, each placed with its own setup command and optionally given a name for display. Mirrors Spawn Points as a per-Map location marker (ADR 0021). A Map with none placed simply has no Tasks that Round.
+_Avoid_: Task location, station
+
+**Checklist**:
+A Participant's personal assignment of up to 3 Task Points for the Round, picked at Round start. The Killer gets one too, made of real Task Points, purely for blend-in - completing it has no effect on the Round Timer.
+_Avoid_: Task list (reserved for the item that displays it)
+
+**Task Clock**:
+The single tracked item every Participant with a Checklist receives at Round start - a clock, right-clicked anytime to print the current Checklist to chat. Identical for Killer and Innocent alike, preserving blend-in.
+_Avoid_: Task List (the item displays a Checklist; keep the two names distinct)
+
 ## Security Room
 
 A persistent map feature, not scoped to a Round — usable by any Participant, any Role, anytime.
