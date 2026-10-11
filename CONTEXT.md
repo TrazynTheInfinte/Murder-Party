@@ -95,7 +95,7 @@ The single location all living Participants are gathered to for a Meeting, and w
 _Avoid_: Meeting location, meeting room
 
 **Round Timer**:
-The countdown that ends the Round as an Innocents Win Condition if it reaches zero before the Killer is Ejected. Pauses for the duration of a Meeting.
+The countdown that ends the Round as an Innocents Win Condition if it reaches zero before the Killer is Ejected. Lasts 5 minutes, shown to everyone as a boss bar that turns red in the final minute. Pauses for the duration of a Meeting, during which the bar reads "Meeting in progress" instead of a countdown.
 _Avoid_: Timer, clock
 
 **Vote**:
