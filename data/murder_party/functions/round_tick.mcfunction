@@ -10,6 +10,7 @@ execute if score #mp mp_subtick matches 0 run function murder_party:weapon/tick_
 execute if score #mp mp_subtick matches 0 run function murder_party:neutral/tick_cooldowns
 execute if score #mp mp_subtick matches 0 run function murder_party:captain/tick_cooldowns
 execute if score #mp mp_subtick matches 0 run function murder_party:civilian/tick_cooldowns
+execute if score #mp mp_subtick matches 0 run function murder_party:round_timer/refresh
 
 execute as @e[tag=mp_killer,tag=mp_alive] run function murder_party:weapon/check_drawn
 

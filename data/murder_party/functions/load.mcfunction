@@ -27,6 +27,13 @@ scoreboard objectives add mp_active_map dummy
 scoreboard objectives add mp_captain_horn_cooldown dummy
 scoreboard objectives add mp_vigilante_knife_cooldown dummy
 scoreboard objectives add mp_hitman_knife_cooldown dummy
+scoreboard objectives add mp_timer_minutes dummy
+scoreboard objectives add mp_timer_seconds dummy
+scoreboard objectives add mp_const_ticks_per_second dummy
+scoreboard objectives add mp_const_seconds_per_minute dummy
+
+scoreboard players set #mp mp_const_ticks_per_second 20
+scoreboard players set #mp mp_const_seconds_per_minute 60
 
 team add mp_hidden
 team modify mp_hidden nametagVisibility never

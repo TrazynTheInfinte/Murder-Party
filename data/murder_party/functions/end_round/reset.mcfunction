@@ -5,3 +5,5 @@ execute as @e[tag=mp_participant] at @s run function murder_party:end_round/rese
 
 scoreboard players set #mp mp_state 0
 scoreboard players set #mp mp_timer 0
+
+bossbar remove murder_party:round_timer

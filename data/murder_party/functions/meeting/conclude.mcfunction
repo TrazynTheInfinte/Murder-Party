@@ -3,6 +3,7 @@
 tag @e[tag=mp_alive] remove mp_has_voted
 
 scoreboard players set #mp mp_state 1
+function murder_party:round_timer/refresh
 
 function murder_party:check_win
 

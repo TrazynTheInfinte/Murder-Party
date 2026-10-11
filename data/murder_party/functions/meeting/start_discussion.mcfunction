@@ -12,3 +12,5 @@ scoreboard players set #mp mp_subtick 0
 scoreboard players set #mp mp_state 3
 
 tellraw @a [{"text":"[Murder Party] A Meeting has been called! Discuss.","color":"gold","bold":true}]
+
+function murder_party:round_timer/show_meeting

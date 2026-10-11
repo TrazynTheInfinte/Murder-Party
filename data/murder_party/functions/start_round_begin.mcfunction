@@ -23,9 +23,12 @@ tellraw @a[tag=mp_alive,tag=!mp_killer] [{"text":"[Murder Party] You are an Inno
 execute as @e[tag=mp_vigilante] run tellraw @s [{"text":"[Murder Party] You are the Vigilante. One strike on the Killer is all you get.","color":"gold","bold":true}]
 execute as @e[tag=mp_noisemaker] run tellraw @s [{"text":"[Murder Party] You are the Noisemaker. Your death will alert everyone.","color":"gold","bold":true}]
 execute as @e[tag=mp_captain] run tellraw @s [{"text":"[Murder Party] You are the Captain. Use your horn to call a Meeting from anywhere.","color":"gold","bold":true}]
+execute as @e[tag=mp_bodyguard] run tellraw @s [{"text":"[Murder Party] You are the Bodyguard. Use your shield on someone to protect them from one hit.","color":"gold","bold":true}]
 
-# 12000 ticks = 10 minutes at 20 ticks/sec
-scoreboard players set #mp mp_timer 12000
+# 6000 ticks = 5 minutes at 20 ticks/sec
+scoreboard players set #mp mp_timer 6000
 scoreboard players set #mp mp_state 1
 
 tellraw @a [{"text":"[Murder Party] Round started! ","color":"dark_red"},{"text":"Find the Killer before time runs out.","color":"gray"}]
+
+function murder_party:round_timer/create
