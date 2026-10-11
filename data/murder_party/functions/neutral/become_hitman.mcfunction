@@ -1,6 +1,7 @@
 # @s = this Round's Neutral
 tag @s add mp_hitman
 give @s simpleknives:iron_knife{MurderPartyHitmanWeapon:1b} 1
+scoreboard players set @s mp_hitman_knife_cooldown 0
 
 # target pool is every other living Participant - the Killer is a valid pick
 execute as @e[tag=mp_alive,tag=!mp_hitman,sort=random,limit=1] run tag @s add mp_hitman_target

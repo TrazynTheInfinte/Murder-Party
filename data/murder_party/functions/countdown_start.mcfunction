@@ -40,5 +40,6 @@ kill @e[tag=mp_cr_opt]
 summon minecraft:armor_stand ~ ~ ~ {Tags:["mp_cr_opt","mp_cr_vigilante"],Invisible:1b,Marker:1b,NoGravity:1b,Invulnerable:1b}
 summon minecraft:armor_stand ~ ~ ~ {Tags:["mp_cr_opt","mp_cr_noisemaker"],Invisible:1b,Marker:1b,NoGravity:1b,Invulnerable:1b}
 summon minecraft:armor_stand ~ ~ ~ {Tags:["mp_cr_opt","mp_cr_captain"],Invisible:1b,Marker:1b,NoGravity:1b,Invulnerable:1b}
+summon minecraft:armor_stand ~ ~ ~ {Tags:["mp_cr_opt","mp_cr_bodyguard"],Invisible:1b,Marker:1b,NoGravity:1b,Invulnerable:1b}
 
 execute as @e[tag=mp_alive,tag=!mp_killer,tag=!mp_neutral] run function murder_party:civilian/offer_pair

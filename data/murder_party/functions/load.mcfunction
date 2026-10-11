@@ -25,6 +25,8 @@ scoreboard objectives add mp_participant_count dummy
 scoreboard objectives add mp_arsonist_cooldown dummy
 scoreboard objectives add mp_active_map dummy
 scoreboard objectives add mp_captain_horn_cooldown dummy
+scoreboard objectives add mp_vigilante_knife_cooldown dummy
+scoreboard objectives add mp_hitman_knife_cooldown dummy
 
 team add mp_hidden
 team modify mp_hidden nametagVisibility never

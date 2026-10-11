@@ -1,0 +1,16 @@
+{
+  "criteria": {
+    "used": {
+      "trigger": "minecraft:player_interacted_with_entity",
+      "conditions": {
+        "item": {
+          "items": ["minecraft:shield"],
+          "nbt": "{MurderPartyGuardBadge:1b}"
+        }
+      }
+    }
+  },
+  "rewards": {
+    "function": "murder_party:civilian/bodyguard_shield_used"
+  }
+}

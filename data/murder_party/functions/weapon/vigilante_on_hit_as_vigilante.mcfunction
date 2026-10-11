@@ -1,1 +1,2 @@
-execute if score #mp mp_state matches 1 if predicate murder_party:holding_vigilante_weapon run function murder_party:weapon/vigilante_try_strike
+execute if score #mp mp_state matches 1 if predicate murder_party:holding_vigilante_weapon if score @s mp_vigilante_knife_cooldown matches 1.. run tellraw @s [{"text":"[Murder Party] Knife not ready yet.","color":"red"}]
+execute if score #mp mp_state matches 1 if predicate murder_party:holding_vigilante_weapon if score @s mp_vigilante_knife_cooldown matches 0 run function murder_party:weapon/vigilante_try_strike

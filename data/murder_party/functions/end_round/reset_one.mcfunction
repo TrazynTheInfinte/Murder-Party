@@ -12,7 +12,12 @@ tag @s remove mp_saboteur
 tag @s remove mp_killer_variant_chosen
 
 clear @s simpleknives:iron_knife{MurderPartyVigilanteWeapon:1b}
+scoreboard players set @s mp_vigilante_knife_cooldown 0
 tag @s remove mp_vigilante
+
+clear @s minecraft:shield{MurderPartyGuardBadge:1b}
+tag @s remove mp_bodyguard
+tag @s remove mp_bodyguard_target
 
 tag @s remove mp_noisemaker
 
@@ -24,6 +29,7 @@ tag @s remove mp_civilian_role_chosen
 
 clear @s simpleknives:iron_knife{MurderPartyJesterDecoy:1b}
 clear @s simpleknives:iron_knife{MurderPartyHitmanWeapon:1b}
+scoreboard players set @s mp_hitman_knife_cooldown 0
 clear @s minecraft:glass_bottle{MurderPartyGasolineCan:1b}
 clear @s minecraft:flint_and_steel{MurderPartyArsonistIgnite:1b}
 scoreboard players set @s mp_arsonist_cooldown 0

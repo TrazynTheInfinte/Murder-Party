@@ -36,6 +36,7 @@ execute if entity @s[tag=mp_noisemaker] run playsound minecraft:entity.wither.sp
 execute if entity @s[tag=mp_noisemaker] run tellraw @a [{"text":"[Murder Party] ","color":"red"},{"selector":"@s"},{"text":" has died.","color":"red"}]
 
 clear @s simpleknives:iron_knife{MurderPartyVigilanteWeapon:1b}
+clear @s minecraft:shield{MurderPartyGuardBadge:1b}
 clear @s minecraft:goat_horn{MurderPartyCaptainHorn:1b}
 clear @s simpleknives:iron_knife{MurderPartyJesterDecoy:1b}
 clear @s simpleknives:iron_knife{MurderPartyHitmanWeapon:1b}

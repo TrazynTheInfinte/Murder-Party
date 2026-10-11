@@ -8,6 +8,7 @@ execute if score #mp mp_state matches 1 if entity @s[tag=mp_slasher] run clear @
 execute if score #mp mp_state matches 1 if entity @s[tag=mp_slasher] run effect clear @s minecraft:glowing
 execute if score #mp mp_state matches 1 if entity @s[tag=mp_slasher] run team join mp_hidden @s
 execute if score #mp mp_state matches 1 run clear @s simpleknives:iron_knife{MurderPartyVigilanteWeapon:1b}
+execute if score #mp mp_state matches 1 run clear @s minecraft:shield{MurderPartyGuardBadge:1b}
 execute if score #mp mp_state matches 1 run clear @s minecraft:goat_horn{MurderPartyCaptainHorn:1b}
 execute if score #mp mp_state matches 1 if entity @s[tag=mp_captain] run team leave @s
 execute if score #mp mp_state matches 1 run clear @s simpleknives:iron_knife{MurderPartyJesterDecoy:1b}
@@ -28,6 +29,8 @@ execute if score #mp mp_state matches 1 run tag @s remove mp_killer_variant_chos
 execute if score #mp mp_state matches 1 run tag @s remove mp_vigilante
 execute if score #mp mp_state matches 1 run tag @s remove mp_noisemaker
 execute if score #mp mp_state matches 1 run tag @s remove mp_captain
+execute if score #mp mp_state matches 1 run tag @s remove mp_bodyguard
+execute if score #mp mp_state matches 1 run tag @s remove mp_bodyguard_target
 execute if score #mp mp_state matches 1 run tag @s remove mp_civilian_role_chosen
 execute if score #mp mp_state matches 1 run tag @s remove mp_neutral
 execute if score #mp mp_state matches 1 run tag @s remove mp_jester
