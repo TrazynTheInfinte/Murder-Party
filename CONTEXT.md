@@ -47,8 +47,10 @@ A Killer Variant. Starts the Round with a personal kit of Create mod remotes, bo
 _Avoid_: default Killer, remote killer
 
 **The Slasher**:
-A Killer Variant, traded entirely for stealth: a sword-shaped Weapon with half the usual Weapon Cooldown, a fixed costume unrelated to any victim (unlike the Masked Killer's Mask), a permanent red glow visible through walls, and immunity to Ejection by Vote — an attempt to vote them out resolves exactly like a tied vote.
+A Killer Variant, traded entirely for stealth: a sword-shaped Weapon with half the usual Weapon Cooldown, a fixed costume unrelated to any victim (unlike the Masked Killer's Mask), a permanent red glow visible through walls, and immunity to Ejection by Vote — an attempt to vote them out resolves exactly like a tied vote, unless that immunity has already been stripped (see below).
 _Avoid_: Jason, slasher killer (the Variant's name is "The Slasher," not a reference to the costume's own flavor name)
+
+A genuine Vigilante or Hitman knife hit on The Slasher strips this immunity permanently for the Round instead of eliminating them - everything else about the Variant (the sword, its halved cooldown, the glow) is untouched. The knife still breaks either way, and for the Hitman, stripping immunity isn't a completed Hit - they don't retire, since their Personal Win still requires an actual elimination.
 
 **Mask**:
 The single tracked disguise instance a Masked Killer holds, always showing their most recently Struck victim. A new Strike replaces it; it never accumulates more than one at a time.

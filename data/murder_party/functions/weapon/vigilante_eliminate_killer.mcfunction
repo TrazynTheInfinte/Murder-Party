@@ -11,6 +11,7 @@ tag @s remove mp_killer
 tag @s remove mp_masked_killer
 tag @s remove mp_saboteur
 tag @s remove mp_slasher
+tag @s remove mp_slasher_vote_immune
 tag @s add mp_spectating
 gamemode spectator @s
 tellraw @s [{"text":"[Murder Party] You were eliminated by the Vigilante.","color":"red"}]

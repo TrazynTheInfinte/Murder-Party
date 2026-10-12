@@ -3,6 +3,7 @@ clear @s minecraft:iron_sword{MurderPartyWeapon:1b}
 scoreboard players set @s mp_cooldown 0
 tag @s remove mp_weapon_drawn
 tag @s remove mp_slasher
+tag @s remove mp_slasher_vote_immune
 
 clear @s id_mask:id_mask
 tag @s remove mp_masked_killer

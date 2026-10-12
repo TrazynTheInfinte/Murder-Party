@@ -11,3 +11,8 @@ item replace entity @s armor.head with id_mask:id_mask{MaskType:"player",display
 
 team join mp_slasher_glow @s
 effect give @s minecraft:glowing 1000000 0 true
+
+# tracked separately from mp_slasher itself - a Vigilante or Hitman knife
+# strips just this, leaving the sword/cooldown/glow intact, so the group can
+# then vote them out normally (user-requested change, 2026-10-11)
+tag @s add mp_slasher_vote_immune

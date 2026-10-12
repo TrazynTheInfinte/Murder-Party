@@ -13,6 +13,7 @@ tag @s remove mp_killer
 tag @s remove mp_masked_killer
 tag @s remove mp_saboteur
 tag @s remove mp_slasher
+tag @s remove mp_slasher_vote_immune
 tag @s remove mp_killer_variant_chosen
 tag @s remove mp_hitman_target
 tag @s add mp_spectating

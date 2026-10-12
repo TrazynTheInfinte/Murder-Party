@@ -1,0 +1,7 @@
+# A genuine Vigilante or Hitman knife strips The Slasher's vote immunity instead of eliminating them
+
+A knife hit that would normally eliminate the Killer instead strips The Slasher's vote immunity, permanently for the Round, if the target is The Slasher. The knife still breaks either way. For the Hitman specifically, this isn't a completed Hit - they don't retire to Spectating, since their Personal Win still requires an actual elimination, and this doesn't grant one.
+
+We considered leaving the knives as a flat elimination regardless of Killer Variant, which is how they worked before this change. We chose the narrower behavior instead, at the user's request: The Slasher's whole identity is trading every other advantage for permanent vote immunity, and letting a single knife swing erase that entirely (the same as any other Variant) undercut the one thing that made the Variant distinct. Stripping immunity instead gives the group a real, informed path to finishing the job through a normal vote, without just handing the knife-holder a free kill on the hardest-to-eliminate Variant.
+
+One accepted consequence: if the Hitman's assigned target happens to be a Slasher, their knife can never complete that Hit - it only ever strips immunity, never eliminates. Their Personal Win against a Slasher target becomes unreachable through their own knife; the group would still have to vote the Slasher out afterward, which resolves the Round but not the Hitman's Personal Win.

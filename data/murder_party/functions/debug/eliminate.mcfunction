@@ -26,6 +26,7 @@ execute if score #mp mp_state matches 1 run tag @s remove mp_killer
 execute if score #mp mp_state matches 1 run tag @s remove mp_masked_killer
 execute if score #mp mp_state matches 1 run tag @s remove mp_saboteur
 execute if score #mp mp_state matches 1 run tag @s remove mp_slasher
+execute if score #mp mp_state matches 1 run tag @s remove mp_slasher_vote_immune
 execute if score #mp mp_state matches 1 run tag @s remove mp_killer_variant_chosen
 execute if score #mp mp_state matches 1 run tag @s remove mp_vigilante
 execute if score #mp mp_state matches 1 run tag @s remove mp_noisemaker
