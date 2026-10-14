@@ -52,7 +52,9 @@ scoreboard players set @s mp_task1_done 0
 scoreboard players set @s mp_task2_done 0
 scoreboard players set @s mp_task3_done 0
 scoreboard players set @s mp_task_standstill_ticks 0
+scoreboard players set @s mp_task_spyglass_cooldown 0
 tag @s remove mp_task_doer
+tag @s remove mp_task_just_completed
 
 tag @s remove mp_meeting_used
 tag @s remove mp_has_voted
