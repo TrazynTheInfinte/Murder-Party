@@ -2,7 +2,11 @@
 # Spyglass. Not necessarily a real Task Point - harmless no-op below if
 # nothing matches within range (e.g. they clicked a mob instead)
 tag @s add mp_task_doer
-execute if score #mp mp_state matches 1 as @e[tag=mp_task_point_instant,distance=..2,limit=1] run function murder_party:tasks/complete_instant
+# distance=..3, not ..2 - a player's actual entity-interact reach in survival
+# is ~3 blocks, so a click landing on the Interaction entity's hitbox from
+# just past 2 blocks away was silently failing this check even though the
+# click itself registered
+execute if score #mp mp_state matches 1 as @e[tag=mp_task_point_instant,distance=..3,limit=1] run function murder_party:tasks/complete_instant
 tag @s remove mp_task_doer
 
 # printed here, with @s back to the player - tellraw produced no output at
