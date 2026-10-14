@@ -50,6 +50,9 @@ scoreboard objectives add mp_task_prev_x dummy
 scoreboard objectives add mp_task_prev_y dummy
 scoreboard objectives add mp_task_prev_z dummy
 scoreboard objectives add mp_task_complete_amount dummy
+scoreboard objectives add mp_task_display_x dummy
+scoreboard objectives add mp_task_display_y dummy
+scoreboard objectives add mp_task_display_z dummy
 
 scoreboard players set #mp mp_const_ticks_per_second 20
 scoreboard players set #mp mp_const_seconds_per_minute 60
