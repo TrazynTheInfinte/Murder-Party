@@ -5,8 +5,10 @@ tag @s add mp_task_doer
 # distance=..3, not ..2 - a player's actual entity-interact reach in survival
 # is ~3 blocks, so a click landing on the Interaction entity's hitbox from
 # just past 2 blocks away was silently failing this check even though the
-# click itself registered
-execute if score #mp mp_state matches 1 as @e[tag=mp_task_point_instant,distance=..3,limit=1] run function murder_party:tasks/complete_instant
+# click itself registered. sort=nearest - the advancement trigger doesn't
+# tell us which entity was actually clicked, so if two Task Points are both
+# within 3 blocks the closest one is our best guess at which one it was
+execute if score #mp mp_state matches 1 as @e[tag=mp_task_point_instant,distance=..3,sort=nearest,limit=1] run function murder_party:tasks/complete_instant
 tag @s remove mp_task_doer
 
 # printed here, with @s back to the player - tellraw produced no output at
