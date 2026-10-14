@@ -9,6 +9,12 @@ execute as @e[tag=mp_task_point_new] store result score @s mp_task_point_z run d
 # optional - stage a name first with:
 # /data modify storage murder_party:admin task_point_name set value "Generator Room"
 execute as @e[tag=mp_task_point_new] run data modify entity @s CustomName set from storage murder_party:admin task_point_name
+
+# Task Points are meant to be spread across the map - force-load their chunk
+# so @e selectors can still find them from anywhere, not just when a player
+# happens to be standing nearby
+execute as @e[tag=mp_task_point_new] at @s run forceload add ~ ~
+
 tag @e[tag=mp_task_point_new] remove mp_task_point_new
 data remove storage murder_party:admin task_point_name
 
