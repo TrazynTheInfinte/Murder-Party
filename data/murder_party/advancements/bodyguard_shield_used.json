@@ -1,7 +1,7 @@
 {
   "criteria": {
     "used": {
-      "trigger": "minecraft:player_interacted_with_entity",
+      "trigger": "minecraft:using_item",
       "conditions": {
         "item": {
           "items": ["minecraft:shield"],
